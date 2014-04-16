@@ -1,0 +1,185 @@
+\hypertarget{class_log}{\section{\-Dokumentacja klasy \-Log}
+\label{class_log}\index{\-Log@{\-Log}}
+}
+
+
+\-Klasa wyświetlania powiadomień.  
+
+
+
+
+{\ttfamily \#include $<$\-Log.\-h$>$}
+
+
+
+\-Diagram współpracy dla \-Log\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_log__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_log_ad0fd212d5228a803e50201c3764ab452}{log} (const \-T \&line)
+\begin{DoxyCompactList}\small\item\em \-Wyświetla powiadomienie. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{class_log}{\-Log} \& \hyperlink{class_log_a7aff739c7ab3f31d9a36e352536d8846}{operator$<$$<$} (const \-T \&line)
+\begin{DoxyCompactList}\small\item\em \-Przeciążony operator$<$$<$ wyświetlający powiadomienie. \end{DoxyCompactList}\item 
+void \hyperlink{class_log_a05e2ce270e9b446a06cbce6044038a3d}{skip\-Log} (bool skip)
+\begin{DoxyCompactList}\small\item\em \-Ustawia flagę pomijania powiadomień. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_log}{\-Log} \& \hyperlink{class_log_a56dd79779d1b42453c6cf3665ae2b7ac}{get} ()
+\begin{DoxyCompactList}\small\item\em \-Zwraca instancję obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_log_af6071a60aa52b6c1b511f99b4bc1b8fe}{\-Log} ()
+\begin{DoxyCompactList}\small\item\em \-Prywatny konstruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_log_a463353fa3f565307672939857d2ad2a3}{skip\-\_\-log}
+\begin{DoxyCompactList}\small\item\em \-Flaga pomijania powiadomień \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Statyczne atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_log}{\-Log} $\ast$ \hyperlink{class_log_a0ccbba5341fbc543305f93d9763b6b35}{instance} = 0
+\begin{DoxyCompactList}\small\item\em \-Instancja klasy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Klasa typu {\bfseries singleton} wyświetlająca powiadomienia na standardowym wyjściu, gdy program zostanie uruchomiony z opcją {\itshape -\/-\/verbose\/}. {\itshape \/} 
+
+\-Definicja w linii 20 pliku \-Log.\-h.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_log_af6071a60aa52b6c1b511f99b4bc1b8fe}{\index{\-Log@{\-Log}!\-Log@{\-Log}}
+\index{\-Log@{\-Log}!Log@{\-Log}}
+\subsubsection[{\-Log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Log\-::\-Log} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_log_af6071a60aa52b6c1b511f99b4bc1b8fe}
+
+
+\-Definicja w linii 5 pliku \-Log.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_log_af6071a60aa52b6c1b511f99b4bc1b8fe_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_log_a56dd79779d1b42453c6cf3665ae2b7ac}{\index{\-Log@{\-Log}!get@{get}}
+\index{get@{get}!Log@{\-Log}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Log} \& {\bf \-Log\-::get} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_log_a56dd79779d1b42453c6cf3665ae2b7ac}
+
+
+\-Definicja w linii 10 pliku \-Log.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_log_a56dd79779d1b42453c6cf3665ae2b7ac_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_log_ad0fd212d5228a803e50201c3764ab452}{\index{\-Log@{\-Log}!log@{log}}
+\index{log@{log}!Log@{\-Log}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf \-Log\-::log} (
+\begin{DoxyParamCaption}
+\item[{const \-T \&}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_log_ad0fd212d5228a803e50201c3764ab452}
+
+
+\-Definicja w linii 38 pliku \-Log.\-h.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_log_ad0fd212d5228a803e50201c3764ab452_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_log_a7aff739c7ab3f31d9a36e352536d8846}{\index{\-Log@{\-Log}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Log@{\-Log}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf \-Log}\& \-Log\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const \-T \&}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_log_a7aff739c7ab3f31d9a36e352536d8846}
+
+
+\-Definicja w linii 46 pliku \-Log.\-h.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_log_a7aff739c7ab3f31d9a36e352536d8846_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_log_a05e2ce270e9b446a06cbce6044038a3d}{\index{\-Log@{\-Log}!skip\-Log@{skip\-Log}}
+\index{skip\-Log@{skip\-Log}!Log@{\-Log}}
+\subsubsection[{skip\-Log}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Log\-::skip\-Log} (
+\begin{DoxyParamCaption}
+\item[{bool}]{skip}
+\end{DoxyParamCaption}
+)}}\label{class_log_a05e2ce270e9b446a06cbce6044038a3d}
+
+
+\-Definicja w linii 18 pliku \-Log.\-cpp.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_log_a0ccbba5341fbc543305f93d9763b6b35}{\index{\-Log@{\-Log}!instance@{instance}}
+\index{instance@{instance}!Log@{\-Log}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Log} $\ast$ {\bf \-Log\-::instance} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_log_a0ccbba5341fbc543305f93d9763b6b35}
+
+
+\-Definicja w linii 23 pliku \-Log.\-h.
+
+\hypertarget{class_log_a463353fa3f565307672939857d2ad2a3}{\index{\-Log@{\-Log}!skip\-\_\-log@{skip\-\_\-log}}
+\index{skip\-\_\-log@{skip\-\_\-log}!Log@{\-Log}}
+\subsubsection[{skip\-\_\-log}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Log\-::skip\-\_\-log}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_log_a463353fa3f565307672939857d2ad2a3}
+
+
+\-Definicja w linii 24 pliku \-Log.\-h.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_log_8h}{\-Log.\-h}\item 
+\hyperlink{_log_8cpp}{\-Log.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_application.html#af74c95b803fba6c2a5fd47a3ae5fda36" title="Zwraca instancję obiektu." alt="" coords="304,5,421,35"/>
+<area shape="rect" id="node9" href="$class_application.html#a347b2679d939278e31d7c6bafcd1f4c1" title="Wypisuje pomoc, z ewentualnymi błędami parsowania linii poleceń." alt="" coords="277,59,448,88"/>
+<area shape="rect" id="node13" href="$class_application.html#a182ef99a13c7e3b34faa6efe83375b01" title="Wypisuje informacje o programie i autorach." alt="" coords="280,112,445,141"/>
+<area shape="rect" id="node5" href="$class_application.html#afa8cc05ce6b6092be5ecdfdae44e05f8" title="Prywatny konstruktor." alt="" coords="497,5,663,35"/>
+<area shape="rect" id="node7" href="$class_application.html#a8b2fa959a43f20b8c58f7e0d0ed0bc93" title="Ustawia domyślne opcje." alt="" coords="713,5,871,35"/>
+<area shape="rect" id="node11" href="$class_application.html#ae643f111fbb13606e91cf9156da09299" title="Drukuje opis błędu." alt="" coords="504,59,656,88"/>
+</map>

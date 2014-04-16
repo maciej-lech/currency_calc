@@ -1,0 +1,58 @@
+/**
+\mainpage Kalkulator walutowy
+\author - Maciej Lech <lechmac@gmail.com>\n- Karol Sowa <karol.sowa@gmail.com>
+\date Styczeń 2014
+\version 1.0
+
+Program ten powstał jako projekt na laboratorium z <b>Obiektowych Metod Projektowania Systemów</b> na kierunku Elektronika i Telekomunikacja AGH w Krakowie.\n\n
+Program przelicza waluty według kursu pobranego ze strony <a href="http://www.nbp.pl">Narodowego Banku Polskiego</a>.\n
+Pobiera on kwoty do przeliczenia ze standardowego wejścia lub z pliku i zapisuje przeliczone wartości na standardowym
+wyjściu lub w podanym pliku. Dane wyjściowe mogą być różnie formatowane, jako zestawienie tabelaryczne lub lista, z różnymi separatorami do wyboru.
+
+\section etykieta-konstrukcja Konstrukcja i wykorzystane wzorce projektowe
+W dużym uproszczeniu konstrukcję programu można sprowadzić do poniższego schematu:
+<img src="./currency_calc_flow.png">
+- Jak widać, główne trzy etapy zostały zrealizowane za pomocą różnych wzorców projektowych. Wspólnym elementem tych etapów jest klasa Converter, która pełni rolę fabryki we wzorcu <b>factory method</b> pobierającej dane wejściowe, dyrektora we wzorcu <b>builder</b> nadzorującego generowanie danych wyjściowych, jak i klasy wybierającej metodę pozyskiwania kursów walutowych opartą na wzorcu <b>strategy</b>.\n
+- Dodatkowo w trakcie tworzenia skorzystano z wzorca <b>singleton</b> w klasie głównej aplikacji Application, w klasie Converter oraz w klasie obsługującej powiadomienia Log.\n
+- Do pobierania danych przez protokół http wykorzystano wzorzec projektowy <b>adapter</b>, tworząc wrapper C++ biblioteki C libcurl.
+
+
+\section etykieta-korzystanie Kompilacja i uruchomienie
+- Program był skompilowany i testowany na:
+\verbatim
+	Ubuntu 12.04 LTS 64 bit
+	GCC 4.6.3
+	libstd++ 4.6.3
+	libcurl 7.22.0
+	Code::Blocks IDE 10.05
+\endverbatim
+- Zrzut programu uruchomionego z opcją -h:
+\verbatim
+Usage:
+	currency_calc -ic CURRENCY -oc CURRENCY [OPTIONS]
+
+Options:
+	-ic X  --in_curr X	Type of input currency
+	-oc X  --out_curr X	Type of output currency
+
+	-e X  --ex_rate X	Exchange rate source (nbp_http*)
+	-d X  --date X		Exchange rate date (last*, %RRMMDD%)
+
+	-i X  --in X		Set location of input data (stdin*, %FILE%)
+	-o X  --out X		Set location of output data (stdout*, %FILE%)
+	-t X  --type X		Type of output data (text_table_space_sep, text_table_tab_sep*, text_space_sep, text_tab_sep, text_newline_sep)
+
+	-h  --help		Show this help message
+	-a  --about		Show about
+	-v  --verbose		Verbose mode
+
+	*  Default option
+
+\endverbatim
+- Przykłady uruchomienia programu:
+\verbatim
+	> currency_calc -v -ic pln -oc eur -i ./dane_do_przeliczenia.txt -o ./dane_przeliczone.txt
+	> currency_calc -v -ic eur -oc usd -t text_newline_sep
+	> currency_calc -v -ic jpy -oc krw -t text_space_sep -d 131024
+\endverbatim
+*/

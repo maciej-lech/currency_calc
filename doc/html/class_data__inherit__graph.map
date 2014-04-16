@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_input_data.html" title="Nadrzędna klasa danych wejściowych." alt="" coords="99,227,208,330"/>
+<area shape="rect" id="node9" href="$class_output_data.html" title="Klasa przechowująca dane wyjściowe." alt="" coords="232,227,349,330"/>
+<area shape="rect" id="node5" href="$class_input_data_file.html" title="Klasa pobierająca dane z pliku." alt="" coords="5,379,136,482"/>
+<area shape="rect" id="node7" href="$class_input_data_stream.html" title="Klasa pobierająca dane ze standardowego wejścia." alt="" coords="160,379,312,482"/>
+</map>

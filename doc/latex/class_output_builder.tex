@@ -1,0 +1,155 @@
+\hypertarget{class_output_builder}{\section{\-Dokumentacja klasy \-Output\-Builder}
+\label{class_output_builder}\index{\-Output\-Builder@{\-Output\-Builder}}
+}
+
+
+\-Nadrzędny budowniczy interpretacji formatowania danych wyjściowych.  
+
+
+
+
+{\ttfamily \#include $<$\-Output\-Builder.\-h$>$}
+
+
+
+\-Diagram dziedziczenia dla \-Output\-Builder\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_output_builder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Diagram współpracy dla \-Output\-Builder\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_output_builder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_output_builder_a321bc74d98dc8ae4e97f870bb0e93052}{\-Output\-Builder} ()
+\begin{DoxyCompactList}\small\item\em \-Konstruktor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_output_builder_a4d1b9970bf73f478c17e9b23693328ff}{$\sim$\-Output\-Builder} ()
+\begin{DoxyCompactList}\small\item\em \-Wirtualny destruktor. \end{DoxyCompactList}\item 
+int \hyperlink{class_output_builder_aa313904a69d986ea1c1e22b0a52b3d87}{build\-Output} (\hyperlink{class_input_data}{\-Input\-Data} $\ast$in, double course)
+\begin{DoxyCompactList}\small\item\em \-Generuje dane wyjściowe. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_output_builder_a5609a1e125b92c4d492724db53ffdf98}{print} (int type, \hyperlink{class_input_data}{\-Input\-Data} $\ast$in, std\-::string param=\char`\"{}\char`\"{})=0
+\begin{DoxyCompactList}\small\item\em \-Funkcja do prezentacji danych, przeciążana przez klasy pochodne. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Statyczne atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_output_data}{\-Output\-Data} $\ast$ \hyperlink{class_output_builder_acdc34b7fa1424904de710c69a7943209}{output} = 0
+\begin{DoxyCompactList}\small\item\em \-Dane wyjściowe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Nadrzędny budowniczy interpretacji formatowania danych wyjściowych. \-Klasa nadrzędna dla innych, wykorzystywana we wzorcu {\bfseries builder}. 
+
+\-Definicja w linii 20 pliku \-Output\-Builder.\-h.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_output_builder_a321bc74d98dc8ae4e97f870bb0e93052}{\index{\-Output\-Builder@{\-Output\-Builder}!\-Output\-Builder@{\-Output\-Builder}}
+\index{\-Output\-Builder@{\-Output\-Builder}!OutputBuilder@{\-Output\-Builder}}
+\subsubsection[{\-Output\-Builder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Output\-Builder\-::\-Output\-Builder} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_output_builder_a321bc74d98dc8ae4e97f870bb0e93052}
+
+
+\-Definicja w linii 5 pliku \-Output\-Builder.\-cpp.
+
+\hypertarget{class_output_builder_a4d1b9970bf73f478c17e9b23693328ff}{\index{\-Output\-Builder@{\-Output\-Builder}!$\sim$\-Output\-Builder@{$\sim$\-Output\-Builder}}
+\index{$\sim$\-Output\-Builder@{$\sim$\-Output\-Builder}!OutputBuilder@{\-Output\-Builder}}
+\subsubsection[{$\sim$\-Output\-Builder}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Output\-Builder\-::$\sim$\-Output\-Builder} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_output_builder_a4d1b9970bf73f478c17e9b23693328ff}
+
+
+\-Definicja w linii 33 pliku \-Output\-Builder.\-h.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_output_builder_aa313904a69d986ea1c1e22b0a52b3d87}{\index{\-Output\-Builder@{\-Output\-Builder}!build\-Output@{build\-Output}}
+\index{build\-Output@{build\-Output}!OutputBuilder@{\-Output\-Builder}}
+\subsubsection[{build\-Output}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Output\-Builder\-::build\-Output} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Input\-Data} $\ast$}]{in, }
+\item[{double}]{course}
+\end{DoxyParamCaption}
+)}}\label{class_output_builder_aa313904a69d986ea1c1e22b0a52b3d87}
+
+
+\-Definicja w linii 13 pliku \-Output\-Builder.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_output_builder_aa313904a69d986ea1c1e22b0a52b3d87_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_output_builder_aa313904a69d986ea1c1e22b0a52b3d87_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_output_builder_a5609a1e125b92c4d492724db53ffdf98}{\index{\-Output\-Builder@{\-Output\-Builder}!print@{print}}
+\index{print@{print}!OutputBuilder@{\-Output\-Builder}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}virtual int {\bf \-Output\-Builder\-::print} (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{{\bf \-Input\-Data} $\ast$}]{in, }
+\item[{std\-::string}]{param = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_output_builder_a5609a1e125b92c4d492724db53ffdf98}
+
+
+\-Implementowany w \hyperlink{class_output_builder_file_a0906f1b222f169060fbdbb3d1026b897}{\-Output\-Builder\-File} i \hyperlink{class_output_builder_stream_a97a94cd7b144697ffbe0876da8e8e6db}{\-Output\-Builder\-Stream}.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_output_builder_a5609a1e125b92c4d492724db53ffdf98_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_output_builder_acdc34b7fa1424904de710c69a7943209}{\index{\-Output\-Builder@{\-Output\-Builder}!output@{output}}
+\index{output@{output}!OutputBuilder@{\-Output\-Builder}}
+\subsubsection[{output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Output\-Data} $\ast$ {\bf \-Output\-Builder\-::output} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_output_builder_acdc34b7fa1424904de710c69a7943209}
+
+
+\-Definicja w linii 23 pliku \-Output\-Builder.\-h.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_output_builder_8h}{\-Output\-Builder.\-h}\item 
+\hyperlink{_output_builder_8cpp}{\-Output\-Builder.\-cpp}\end{DoxyCompactItemize}

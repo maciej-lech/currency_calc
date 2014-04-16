@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_converter_8h.html" title="Definicja klasy zarządzającej konwersją walut Converter." alt="" coords="385,83,476,112"/>
+<area shape="rect" id="node5" href="$_enums_8h.html" title="Definicje typów wyliczeniowych wykorzystywanych w programie." alt="" coords="139,237,213,267"/>
+<area shape="rect" id="node7" href="$_input_data_8h.html" title="Definicja klasy InputData, pochodnej klasy Data oraz nadrzędnej dla klas pobierających dane wejściowe..." alt="" coords="507,392,597,421"/>
+<area shape="rect" id="node18" href="$_input_data_stream_8h.html" title="Definicja klasy InputDataStream, pobierającej dane ze standardowego wejścia." alt="" coords="560,160,693,189"/>
+<area shape="rect" id="node25" href="$_input_data_file_8h.html" title="Definicja klasy InputDataFile, pobierającej dane wejściowe z pliku." alt="" coords="421,160,536,189"/>
+<area shape="rect" id="node31" href="$_f_x_rate_8h.html" title="Definicja klasy FXRate, nadrzędnej dla klasy pobierania kursu walutowego." alt="" coords="768,315,845,344"/>
+<area shape="rect" id="node34" href="$_output_builder_8h.html" title="Definicja klasy OutputBuilder, nadrzędnej klasy budującej dane wyjścia." alt="" coords="237,237,352,267"/>
+<area shape="rect" id="node42" href="$_output_builder_stream_8h.html" title="Definicja klasy OutputBuilderStream, budującej i prezentującej dane na standardowym wyjściu..." alt="" coords="27,160,184,189"/>
+<area shape="rect" id="node47" href="$_output_builder_file_8h.html" title="Definicja klasy OutputBuilderFile, budującej i zapisującej dane wyjściowe do pliku." alt="" coords="208,160,347,189"/>
+<area shape="rect" id="node13" href="$_data_8h.html" title="Definicja klasy Data modelującej kontener vector, dla przechowywania danych wejściowych i wyjściowych..." alt="" coords="445,469,507,499"/>
+<area shape="rect" id="node37" href="$_output_data_8h.html" title="Definicja klasy OutputData, pochodnej klasy Data, przechowującej dane wyjściowe." alt="" coords="363,315,464,344"/>
+</map>

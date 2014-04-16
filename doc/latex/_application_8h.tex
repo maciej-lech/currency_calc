@@ -1,0 +1,93 @@
+\hypertarget{_application_8h}{\section{\-Dokumentacja pliku \-Application.\-h}
+\label{_application_8h}\index{\-Application.\-h@{\-Application.\-h}}
+}
+
+
+\-Definicja głównej klasy aplikacji \hyperlink{class_application}{\-Application}.  
+
+
+{\ttfamily \#include $<$iostream$>$}\*
+{\ttfamily \#include $<$string$>$}\*
+{\ttfamily \#include $<$algorithm$>$}\*
+{\ttfamily \#include \char`\"{}\-Enums.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-Log.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-Converter.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-F\-X\-Rate.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-F\-X\-Rate\-N\-B\-P.\-h\char`\"{}}\*
+\-Wykres zależności załączania dla \-Application.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_application_8h__incl}
+\end{center}
+\end{figure}
+\-Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{_application_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_application}{\-Application}
+\begin{DoxyCompactList}\small\item\em \-Główna klasa aplikacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Zmienne}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$const \hyperlink{_application_8h_a8252dc0d1288d63fa78fa4296865379a}{app\-Name} = \char`\"{}currency\-\_\-calc\char`\"{}
+\begin{DoxyCompactList}\small\item\em \-Stała z nazwą programu. \end{DoxyCompactList}\item 
+const char $\ast$const \hyperlink{_application_8h_a846b07ad5be09b086d6d0e339a11ee4e}{app\-Version} = \char`\"{}1.\-0\char`\"{}
+\begin{DoxyCompactList}\small\item\em \-Stała z wersją programu. \end{DoxyCompactList}\item 
+const char $\ast$const \hyperlink{_application_8h_aefbc0d64980146b6f9b96482a08d4e7b}{app\-Info} = \char`\"{}\-Currency calculator\char`\"{}
+\begin{DoxyCompactList}\small\item\em \-Stała z opisem programu. \end{DoxyCompactList}\item 
+const char $\ast$const \hyperlink{_application_8h_aa3a8dada268c93dd0e2b7112cfa611eb}{app\-Autors} = \char`\"{}\-Maciej \-Lech \& \-Karol \-Sowa\char`\"{}
+\begin{DoxyCompactList}\small\item\em \-Stała z autorami. \end{DoxyCompactList}\item 
+const char $\ast$const \hyperlink{_application_8h_a8cc8b02dfc03ba6f9fd7cf72e76b5c39}{app\-Rel\-Date} = \char`\"{}\-January 2014\char`\"{}
+\begin{DoxyCompactList}\small\item\em \-Stała z datą utworzenia programu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Plik ten jest częścią projektu currency\-\_\-calc. 
+
+\-Definicja w pliku \hyperlink{_application_8h_source}{\-Application.\-h}.
+
+
+
+\subsection{\-Dokumentacja zmiennych}
+\hypertarget{_application_8h_aa3a8dada268c93dd0e2b7112cfa611eb}{\index{\-Application.\-h@{\-Application.\-h}!app\-Autors@{app\-Autors}}
+\index{app\-Autors@{app\-Autors}!Application.h@{\-Application.\-h}}
+\subsubsection[{app\-Autors}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ const {\bf app\-Autors} = \char`\"{}\-Maciej \-Lech \& \-Karol \-Sowa\char`\"{}}}\label{_application_8h_aa3a8dada268c93dd0e2b7112cfa611eb}
+
+
+\-Definicja w linii 23 pliku \-Application.\-h.
+
+\hypertarget{_application_8h_aefbc0d64980146b6f9b96482a08d4e7b}{\index{\-Application.\-h@{\-Application.\-h}!app\-Info@{app\-Info}}
+\index{app\-Info@{app\-Info}!Application.h@{\-Application.\-h}}
+\subsubsection[{app\-Info}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ const {\bf app\-Info} = \char`\"{}\-Currency calculator\char`\"{}}}\label{_application_8h_aefbc0d64980146b6f9b96482a08d4e7b}
+
+
+\-Definicja w linii 22 pliku \-Application.\-h.
+
+\hypertarget{_application_8h_a8252dc0d1288d63fa78fa4296865379a}{\index{\-Application.\-h@{\-Application.\-h}!app\-Name@{app\-Name}}
+\index{app\-Name@{app\-Name}!Application.h@{\-Application.\-h}}
+\subsubsection[{app\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ const {\bf app\-Name} = \char`\"{}currency\-\_\-calc\char`\"{}}}\label{_application_8h_a8252dc0d1288d63fa78fa4296865379a}
+
+
+\-Definicja w linii 20 pliku \-Application.\-h.
+
+\hypertarget{_application_8h_a8cc8b02dfc03ba6f9fd7cf72e76b5c39}{\index{\-Application.\-h@{\-Application.\-h}!app\-Rel\-Date@{app\-Rel\-Date}}
+\index{app\-Rel\-Date@{app\-Rel\-Date}!Application.h@{\-Application.\-h}}
+\subsubsection[{app\-Rel\-Date}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ const {\bf app\-Rel\-Date} = \char`\"{}\-January 2014\char`\"{}}}\label{_application_8h_a8cc8b02dfc03ba6f9fd7cf72e76b5c39}
+
+
+\-Definicja w linii 24 pliku \-Application.\-h.
+
+\hypertarget{_application_8h_a846b07ad5be09b086d6d0e339a11ee4e}{\index{\-Application.\-h@{\-Application.\-h}!app\-Version@{app\-Version}}
+\index{app\-Version@{app\-Version}!Application.h@{\-Application.\-h}}
+\subsubsection[{app\-Version}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ const {\bf app\-Version} = \char`\"{}1.\-0\char`\"{}}}\label{_application_8h_a846b07ad5be09b086d6d0e339a11ee4e}
+
+
+\-Definicja w linii 21 pliku \-Application.\-h.
+

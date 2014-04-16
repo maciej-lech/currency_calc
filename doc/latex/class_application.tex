@@ -1,0 +1,406 @@
+\hypertarget{class_application}{\section{\-Dokumentacja klasy \-Application}
+\label{class_application}\index{\-Application@{\-Application}}
+}
+
+
+\-Główna klasa aplikacji.  
+
+
+
+
+{\ttfamily \#include $<$\-Application.\-h$>$}
+
+
+
+\-Diagram współpracy dla \-Application\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{class_application__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_application_a08f47f2a3acf5691473d3d8bafae0577}{run} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \-Uruchamia dalsze działanie aplikacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_application}{\-Application} $\ast$ \hyperlink{class_application_af74c95b803fba6c2a5fd47a3ae5fda36}{get} ()
+\begin{DoxyCompactList}\small\item\em \-Zwraca instancję obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{\-Application} ()
+\begin{DoxyCompactList}\small\item\em \-Prywatny konstruktor. \end{DoxyCompactList}\item 
+int \hyperlink{class_application_a2013314d883802bfb12b6b445d5dabce}{parse\-Command\-Line} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \-Parser linii poleceń. \end{DoxyCompactList}\item 
+void \hyperlink{class_application_a347b2679d939278e31d7c6bafcd1f4c1}{show\-Usage} (const std\-::string \&err=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em \-Wypisuje pomoc, z ewentualnymi błędami parsowania linii poleceń. \end{DoxyCompactList}\item 
+void \hyperlink{class_application_a182ef99a13c7e3b34faa6efe83375b01}{show\-About} ()
+\begin{DoxyCompactList}\small\item\em \-Wypisuje informacje o programie i autorach. \end{DoxyCompactList}\item 
+void \hyperlink{class_application_a8b2fa959a43f20b8c58f7e0d0ed0bc93}{set\-Default} ()
+\begin{DoxyCompactList}\small\item\em \-Ustawia domyślne opcje. \end{DoxyCompactList}\item 
+void \hyperlink{class_application_ae643f111fbb13606e91cf9156da09299}{print\-Error} (const std\-::string \&err)
+\begin{DoxyCompactList}\small\item\em \-Drukuje opis błędu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_application_a196c830264295cd000204d0668e2262c}{input}
+\begin{DoxyCompactList}\small\item\em \-Informacja o lokalizacji danych wejściowych. \end{DoxyCompactList}\item 
+int \hyperlink{class_application_a3aaf22cf1c0799a24fb381b5d2a7bb52}{output}
+\begin{DoxyCompactList}\small\item\em \-Informacja o lokalizacji danych wyjściowych. \end{DoxyCompactList}\item 
+int \hyperlink{class_application_ae3526813bef766d79da0af787c48af3a}{out\-\_\-type}
+\begin{DoxyCompactList}\small\item\em \-Informacja o sposobie formatowania danych wyjściowych. \end{DoxyCompactList}\item 
+int \hyperlink{class_application_ad351bc6efdb11d1086bf82803f1c3e92}{ex\-\_\-rate\-\_\-algorithm}
+\begin{DoxyCompactList}\small\item\em \-Informacja o źródle kursów walutowych. \end{DoxyCompactList}\item 
+bool \hyperlink{class_application_af116b891333df3a62cf85e3dc0859e03}{verbose}
+\begin{DoxyCompactList}\small\item\em \-Informacja, czy włączyć \char`\"{}tryb krzykliwy\char`\"{}. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_application_ad81fdec0c72cb080edfab33439f0d2a9}{in\-\_\-currency}
+\begin{DoxyCompactList}\small\item\em \-Waluta danych wejściowych. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_application_a163202d7dc3c0863883af922d88f6b08}{out\-\_\-currency}
+\begin{DoxyCompactList}\small\item\em \-Waluta danych wyjściowych. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_application_a4e66f842b9681694c2c3a7ab402a3373}{date}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_data}{\-Data} kursów\-: \char`\"{}\-R\-R\-M\-M\-D\-D\char`\"{}, lub domyślnie najnowsze \char`\"{}\char`\"{}. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_application_a2b3f25d468a1923a99ca00a17d613907}{in\-\_\-file}
+\begin{DoxyCompactList}\small\item\em \-Plik z danymi wejściowymi. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_application_af3e196e2f013c693c29c3ac89a7631d1}{out\-\_\-file}
+\begin{DoxyCompactList}\small\item\em \-Plik z danymi wyjściowymi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Statyczne atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_application}{\-Application} $\ast$ \hyperlink{class_application_abd74a9391b24bd1a1586a1d8b88bb2d3}{instance} = 0
+\begin{DoxyCompactList}\small\item\em \-Wskaźnik do instancji jedynego obiektu klasy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Jest to główna klasa programu. \-Wykorzystuje ona wzorzec {\bfseries singleton}. \-Jej instancja jest tworzona w funkcji \hyperlink{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}{main()}. 
+
+\-Definicja w linii 32 pliku \-Application.\-h.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{\index{\-Application@{\-Application}!\-Application@{\-Application}}
+\index{\-Application@{\-Application}!Application@{\-Application}}
+\subsubsection[{\-Application}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Application\-::\-Application} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}
+
+
+\-Definicja w linii 5 pliku \-Application.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_application_af74c95b803fba6c2a5fd47a3ae5fda36}{\index{\-Application@{\-Application}!get@{get}}
+\index{get@{get}!Application@{\-Application}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Application} $\ast$ {\bf \-Application\-::get} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_application_af74c95b803fba6c2a5fd47a3ae5fda36}
+
+
+\-Definicja w linii 207 pliku \-Application.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_af74c95b803fba6c2a5fd47a3ae5fda36_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_af74c95b803fba6c2a5fd47a3ae5fda36_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_application_a2013314d883802bfb12b6b445d5dabce}{\index{\-Application@{\-Application}!parse\-Command\-Line@{parse\-Command\-Line}}
+\index{parse\-Command\-Line@{parse\-Command\-Line}!Application@{\-Application}}
+\subsubsection[{parse\-Command\-Line}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Application\-::parse\-Command\-Line} (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_a2013314d883802bfb12b6b445d5dabce}
+
+
+\-Definicja w linii 10 pliku \-Application.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_a2013314d883802bfb12b6b445d5dabce_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_a2013314d883802bfb12b6b445d5dabce_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_application_ae643f111fbb13606e91cf9156da09299}{\index{\-Application@{\-Application}!print\-Error@{print\-Error}}
+\index{print\-Error@{print\-Error}!Application@{\-Application}}
+\subsubsection[{print\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Application\-::print\-Error} (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_ae643f111fbb13606e91cf9156da09299}
+
+
+\-Definicja w linii 202 pliku \-Application.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_ae643f111fbb13606e91cf9156da09299_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_application_a08f47f2a3acf5691473d3d8bafae0577}{\index{\-Application@{\-Application}!run@{run}}
+\index{run@{run}!Application@{\-Application}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Application\-::run} (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{class_application_a08f47f2a3acf5691473d3d8bafae0577}
+
+
+\-Definicja w linii 215 pliku \-Application.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_a08f47f2a3acf5691473d3d8bafae0577_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_application_a08f47f2a3acf5691473d3d8bafae0577_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_application_a8b2fa959a43f20b8c58f7e0d0ed0bc93}{\index{\-Application@{\-Application}!set\-Default@{set\-Default}}
+\index{set\-Default@{set\-Default}!Application@{\-Application}}
+\subsubsection[{set\-Default}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Application\-::set\-Default} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_a8b2fa959a43f20b8c58f7e0d0ed0bc93}
+
+
+\-Definicja w linii 188 pliku \-Application.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_a8b2fa959a43f20b8c58f7e0d0ed0bc93_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_application_a182ef99a13c7e3b34faa6efe83375b01}{\index{\-Application@{\-Application}!show\-About@{show\-About}}
+\index{show\-About@{show\-About}!Application@{\-Application}}
+\subsubsection[{show\-About}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Application\-::show\-About} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_a182ef99a13c7e3b34faa6efe83375b01}
+
+
+\-Definicja w linii 178 pliku \-Application.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_a182ef99a13c7e3b34faa6efe83375b01_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_application_a347b2679d939278e31d7c6bafcd1f4c1}{\index{\-Application@{\-Application}!show\-Usage@{show\-Usage}}
+\index{show\-Usage@{show\-Usage}!Application@{\-Application}}
+\subsubsection[{show\-Usage}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Application\-::show\-Usage} (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{err = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_a347b2679d939278e31d7c6bafcd1f4c1}
+
+
+\-Definicja w linii 150 pliku \-Application.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_a347b2679d939278e31d7c6bafcd1f4c1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_application_a347b2679d939278e31d7c6bafcd1f4c1_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_application_a4e66f842b9681694c2c3a7ab402a3373}{\index{\-Application@{\-Application}!date@{date}}
+\index{date@{date}!Application@{\-Application}}
+\subsubsection[{date}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Application\-::date}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_a4e66f842b9681694c2c3a7ab402a3373}
+
+
+\-Definicja w linii 44 pliku \-Application.\-h.
+
+\hypertarget{class_application_ad351bc6efdb11d1086bf82803f1c3e92}{\index{\-Application@{\-Application}!ex\-\_\-rate\-\_\-algorithm@{ex\-\_\-rate\-\_\-algorithm}}
+\index{ex\-\_\-rate\-\_\-algorithm@{ex\-\_\-rate\-\_\-algorithm}!Application@{\-Application}}
+\subsubsection[{ex\-\_\-rate\-\_\-algorithm}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Application\-::ex\-\_\-rate\-\_\-algorithm}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_ad351bc6efdb11d1086bf82803f1c3e92}
+
+
+\-Definicja w linii 40 pliku \-Application.\-h.
+
+\hypertarget{class_application_ad81fdec0c72cb080edfab33439f0d2a9}{\index{\-Application@{\-Application}!in\-\_\-currency@{in\-\_\-currency}}
+\index{in\-\_\-currency@{in\-\_\-currency}!Application@{\-Application}}
+\subsubsection[{in\-\_\-currency}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Application\-::in\-\_\-currency}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_ad81fdec0c72cb080edfab33439f0d2a9}
+
+
+\-Definicja w linii 42 pliku \-Application.\-h.
+
+\hypertarget{class_application_a2b3f25d468a1923a99ca00a17d613907}{\index{\-Application@{\-Application}!in\-\_\-file@{in\-\_\-file}}
+\index{in\-\_\-file@{in\-\_\-file}!Application@{\-Application}}
+\subsubsection[{in\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Application\-::in\-\_\-file}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_a2b3f25d468a1923a99ca00a17d613907}
+
+
+\-Definicja w linii 45 pliku \-Application.\-h.
+
+\hypertarget{class_application_a196c830264295cd000204d0668e2262c}{\index{\-Application@{\-Application}!input@{input}}
+\index{input@{input}!Application@{\-Application}}
+\subsubsection[{input}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Application\-::input}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_a196c830264295cd000204d0668e2262c}
+
+
+\-Definicja w linii 37 pliku \-Application.\-h.
+
+\hypertarget{class_application_abd74a9391b24bd1a1586a1d8b88bb2d3}{\index{\-Application@{\-Application}!instance@{instance}}
+\index{instance@{instance}!Application@{\-Application}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Application} $\ast$ {\bf \-Application\-::instance} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_application_abd74a9391b24bd1a1586a1d8b88bb2d3}
+
+
+\-Definicja w linii 35 pliku \-Application.\-h.
+
+\hypertarget{class_application_a163202d7dc3c0863883af922d88f6b08}{\index{\-Application@{\-Application}!out\-\_\-currency@{out\-\_\-currency}}
+\index{out\-\_\-currency@{out\-\_\-currency}!Application@{\-Application}}
+\subsubsection[{out\-\_\-currency}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Application\-::out\-\_\-currency}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_a163202d7dc3c0863883af922d88f6b08}
+
+
+\-Definicja w linii 43 pliku \-Application.\-h.
+
+\hypertarget{class_application_af3e196e2f013c693c29c3ac89a7631d1}{\index{\-Application@{\-Application}!out\-\_\-file@{out\-\_\-file}}
+\index{out\-\_\-file@{out\-\_\-file}!Application@{\-Application}}
+\subsubsection[{out\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Application\-::out\-\_\-file}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_af3e196e2f013c693c29c3ac89a7631d1}
+
+
+\-Definicja w linii 46 pliku \-Application.\-h.
+
+\hypertarget{class_application_ae3526813bef766d79da0af787c48af3a}{\index{\-Application@{\-Application}!out\-\_\-type@{out\-\_\-type}}
+\index{out\-\_\-type@{out\-\_\-type}!Application@{\-Application}}
+\subsubsection[{out\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Application\-::out\-\_\-type}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_ae3526813bef766d79da0af787c48af3a}
+
+
+\-Definicja w linii 39 pliku \-Application.\-h.
+
+\hypertarget{class_application_a3aaf22cf1c0799a24fb381b5d2a7bb52}{\index{\-Application@{\-Application}!output@{output}}
+\index{output@{output}!Application@{\-Application}}
+\subsubsection[{output}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Application\-::output}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_a3aaf22cf1c0799a24fb381b5d2a7bb52}
+
+
+\-Definicja w linii 38 pliku \-Application.\-h.
+
+\hypertarget{class_application_af116b891333df3a62cf85e3dc0859e03}{\index{\-Application@{\-Application}!verbose@{verbose}}
+\index{verbose@{verbose}!Application@{\-Application}}
+\subsubsection[{verbose}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Application\-::verbose}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_application_af116b891333df3a62cf85e3dc0859e03}
+
+
+\-Definicja w linii 41 pliku \-Application.\-h.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_application_8h}{\-Application.\-h}\item 
+\hyperlink{_application_8cpp}{\-Application.\-cpp}\end{DoxyCompactItemize}

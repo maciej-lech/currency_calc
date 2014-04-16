@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_application.html#a347b2679d939278e31d7c6bafcd1f4c1" title="Wypisuje pomoc, z ewentualnymi błędami parsowania linii poleceń." alt="" coords="205,5,376,35"/>
+<area shape="rect" id="node7" href="$class_application.html#a08f47f2a3acf5691473d3d8bafae0577" title="Uruchamia dalsze działanie aplikacji." alt="" coords="697,32,815,61"/>
+<area shape="rect" id="node5" href="$class_application.html#a2013314d883802bfb12b6b445d5dabce" title="Parser linii poleceń." alt="" coords="425,5,647,35"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="main" alt="" coords="865,32,916,61"/>
+</map>

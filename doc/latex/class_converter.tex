@@ -1,0 +1,207 @@
+\hypertarget{class_converter}{\section{\-Dokumentacja klasy \-Converter}
+\label{class_converter}\index{\-Converter@{\-Converter}}
+}
+
+
+\-Klasa zarządzająca konwersją walutową.  
+
+
+
+
+{\ttfamily \#include $<$\-Converter.\-h$>$}
+
+
+
+\-Diagram współpracy dla \-Converter\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_converter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_converter}{\-Converter} \& \hyperlink{class_converter_a0dbd32eeac6a1b52fdf4a9f42e55c110}{get} ()
+\begin{DoxyCompactList}\small\item\em \-Zwraca instancję obiektu. \end{DoxyCompactList}\item 
+static int \hyperlink{class_converter_a6a2bb96d0b8d1dd5ebbe4685cec6f203}{get\-Input} (int location, const std\-::string \&file)
+\begin{DoxyCompactList}\small\item\em \-Pobiera dane wejściowe. \end{DoxyCompactList}\item 
+static int \hyperlink{class_converter_aff1b8d27be5c69b531d10f8451e07ca0}{get\-F\-X\-Rate} (\hyperlink{class_f_x_rate}{\-F\-X\-Rate} $\ast$rate, const std\-::string \&in\-\_\-curr, const std\-::string \&out\-\_\-curr, const std\-::string \&data)
+\begin{DoxyCompactList}\small\item\em \-Pobiera kurs. \end{DoxyCompactList}\item 
+static int \hyperlink{class_converter_aa74b89ae3f4652130726fb64ce970020}{set\-Output} (int location, int type, const std\-::string \&file)
+\begin{DoxyCompactList}\small\item\em \-Generuje dane wyjściowe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Statyczne atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_input_data}{\-Input\-Data} $\ast$ \hyperlink{class_converter_a5bea25c79f8853dd57505af05af0b42a}{input} = 0
+\begin{DoxyCompactList}\small\item\em \-Dane wejściowe. \end{DoxyCompactList}\item 
+static \hyperlink{class_output_builder}{\-Output\-Builder} $\ast$ \hyperlink{class_converter_a5f69c39d5bf6a2f969720b04d8dfe0c3}{output} = 0
+\begin{DoxyCompactList}\small\item\em \-Budowniczy danych wyjściowych. \end{DoxyCompactList}\item 
+static \hyperlink{class_f_x_rate}{\-F\-X\-Rate} $\ast$ \hyperlink{class_converter_a84a5722a12516505b73cf900938138ff}{ex\-\_\-rate} = 0
+\begin{DoxyCompactList}\small\item\em \-Nasz kurs walutowy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Jest to główna klasa abstrakcji konwersji walutowej.\par
+\par
+ \-Klasa ta\-:\par
+
+\begin{DoxyItemize}
+\item pełni rolę fabryki, we wzorcu projektowym {\bfseries factory method}, dla pobierania danych wejściowych;\par
+
+\item wybiera algorytm, zgodnie ze wzorcem projektowym {\bfseries strategy}, sposobu pobierania kursu dla danych walut;\par
+
+\item pełni rolę dyrektora, we wzorcu projektowym {\bfseries builder}, przy generowaniu danych wyjściowych. 
+\end{DoxyItemize}
+
+\-Definicja w linii 29 pliku \-Converter.\-h.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_converter_a0dbd32eeac6a1b52fdf4a9f42e55c110}{\index{\-Converter@{\-Converter}!get@{get}}
+\index{get@{get}!Converter@{\-Converter}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Converter} \& {\bf \-Converter\-::get} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_converter_a0dbd32eeac6a1b52fdf4a9f42e55c110}
+
+
+\-Definicja w linii 8 pliku \-Converter.\-cpp.
+
+\hypertarget{class_converter_aff1b8d27be5c69b531d10f8451e07ca0}{\index{\-Converter@{\-Converter}!get\-F\-X\-Rate@{get\-F\-X\-Rate}}
+\index{get\-F\-X\-Rate@{get\-F\-X\-Rate}!Converter@{\-Converter}}
+\subsubsection[{get\-F\-X\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Converter\-::get\-F\-X\-Rate} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-F\-X\-Rate} $\ast$}]{rate, }
+\item[{const std\-::string \&}]{in\-\_\-curr, }
+\item[{const std\-::string \&}]{out\-\_\-curr, }
+\item[{const std\-::string \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_converter_aff1b8d27be5c69b531d10f8451e07ca0}
+
+
+\-Definicja w linii 33 pliku \-Converter.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_converter_aff1b8d27be5c69b531d10f8451e07ca0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_converter_aff1b8d27be5c69b531d10f8451e07ca0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_converter_a6a2bb96d0b8d1dd5ebbe4685cec6f203}{\index{\-Converter@{\-Converter}!get\-Input@{get\-Input}}
+\index{get\-Input@{get\-Input}!Converter@{\-Converter}}
+\subsubsection[{get\-Input}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Converter\-::get\-Input} (
+\begin{DoxyParamCaption}
+\item[{int}]{location, }
+\item[{const std\-::string \&}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_converter_a6a2bb96d0b8d1dd5ebbe4685cec6f203}
+
+
+\-Definicja w linii 14 pliku \-Converter.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_converter_a6a2bb96d0b8d1dd5ebbe4685cec6f203_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_converter_a6a2bb96d0b8d1dd5ebbe4685cec6f203_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_converter_aa74b89ae3f4652130726fb64ce970020}{\index{\-Converter@{\-Converter}!set\-Output@{set\-Output}}
+\index{set\-Output@{set\-Output}!Converter@{\-Converter}}
+\subsubsection[{set\-Output}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Converter\-::set\-Output} (
+\begin{DoxyParamCaption}
+\item[{int}]{location, }
+\item[{int}]{type, }
+\item[{const std\-::string \&}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_converter_aa74b89ae3f4652130726fb64ce970020}
+
+
+\-Definicja w linii 47 pliku \-Converter.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_converter_aa74b89ae3f4652130726fb64ce970020_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_converter_aa74b89ae3f4652130726fb64ce970020_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_converter_a84a5722a12516505b73cf900938138ff}{\index{\-Converter@{\-Converter}!ex\-\_\-rate@{ex\-\_\-rate}}
+\index{ex\-\_\-rate@{ex\-\_\-rate}!Converter@{\-Converter}}
+\subsubsection[{ex\-\_\-rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-F\-X\-Rate} $\ast$ {\bf \-Converter\-::ex\-\_\-rate} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_converter_a84a5722a12516505b73cf900938138ff}
+
+
+\-Definicja w linii 34 pliku \-Converter.\-h.
+
+\hypertarget{class_converter_a5bea25c79f8853dd57505af05af0b42a}{\index{\-Converter@{\-Converter}!input@{input}}
+\index{input@{input}!Converter@{\-Converter}}
+\subsubsection[{input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Input\-Data} $\ast$ {\bf \-Converter\-::input} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_converter_a5bea25c79f8853dd57505af05af0b42a}
+
+
+\-Definicja w linii 32 pliku \-Converter.\-h.
+
+\hypertarget{class_converter_a5f69c39d5bf6a2f969720b04d8dfe0c3}{\index{\-Converter@{\-Converter}!output@{output}}
+\index{output@{output}!Converter@{\-Converter}}
+\subsubsection[{output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Output\-Builder} $\ast$ {\bf \-Converter\-::output} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_converter_a5f69c39d5bf6a2f969720b04d8dfe0c3}
+
+
+\-Definicja w linii 33 pliku \-Converter.\-h.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_converter_8h}{\-Converter.\-h}\item 
+\hyperlink{_converter_8cpp}{\-Converter.\-cpp}\end{DoxyCompactItemize}

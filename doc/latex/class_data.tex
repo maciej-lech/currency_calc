@@ -1,0 +1,180 @@
+\hypertarget{class_data}{\section{\-Dokumentacja klasy \-Data}
+\label{class_data}\index{\-Data@{\-Data}}
+}
+
+
+\-Klasa modelująca kontener vector.  
+
+
+
+
+{\ttfamily \#include $<$\-Data.\-h$>$}
+
+
+
+\-Diagram dziedziczenia dla \-Data\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_data__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_data_a8c4dbe720325cd952ec9146114f22d35}{$\sim$\-Data} ()
+\begin{DoxyCompactList}\small\item\em \-Wirtualny destruktor. \end{DoxyCompactList}\item 
+void \hyperlink{class_data_a642f78a648da7acf9df648cbd28b6f53}{push} (double value)
+\begin{DoxyCompactList}\small\item\em \-Dodaje element do wektora danych. \end{DoxyCompactList}\item 
+double \hyperlink{class_data_ad817b2f9fd143b949d0deb3ad1ba6d5d}{get} (unsigned int i)
+\begin{DoxyCompactList}\small\item\em \-Wyświetla element wektora. \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$\-::iterator \hyperlink{class_data_ad20496a4db65c1aebaad4217f876e19c}{begin} ()
+\begin{DoxyCompactList}\small\item\em \-Zwraca iterator na początek. \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$\-::iterator \hyperlink{class_data_ab51897fdf937a369d89624c564d58d6d}{end} ()
+\begin{DoxyCompactList}\small\item\em \-Zwraca iterator na koniec. \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$\-::size\-\_\-type \hyperlink{class_data_a8ed62af1e1f9e271e475b882a3d3ea4d}{size} ()
+\begin{DoxyCompactList}\small\item\em \-Zwraca ilość elementów wektora. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{class_data_a375ee0846e20237e857df59893228b68}{data}
+\begin{DoxyCompactList}\small\item\em \-Wektor liczb zmiennoprzecinkowych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Jest to klasa nadrzędna dla innych klas przechowujących dane. \-Zabezpiecza ona przed bezpośrednim dostępem do wektora, oferując ograniczony interfejs modyfikacji danych. 
+
+\-Definicja w linii 22 pliku \-Data.\-h.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_data_a8c4dbe720325cd952ec9146114f22d35}{\index{\-Data@{\-Data}!$\sim$\-Data@{$\sim$\-Data}}
+\index{$\sim$\-Data@{$\sim$\-Data}!Data@{\-Data}}
+\subsubsection[{$\sim$\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Data\-::$\sim$\-Data} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_data_a8c4dbe720325cd952ec9146114f22d35}
+
+
+\-Definicja w linii 31 pliku \-Data.\-h.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_data_ad20496a4db65c1aebaad4217f876e19c}{\index{\-Data@{\-Data}!begin@{begin}}
+\index{begin@{begin}!Data@{\-Data}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$\-::iterator {\bf \-Data\-::begin} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_data_ad20496a4db65c1aebaad4217f876e19c}
+
+
+\-Definicja w linii 18 pliku \-Data.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_data_ad20496a4db65c1aebaad4217f876e19c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_data_ab51897fdf937a369d89624c564d58d6d}{\index{\-Data@{\-Data}!end@{end}}
+\index{end@{end}!Data@{\-Data}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$\-::iterator {\bf \-Data\-::end} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_data_ab51897fdf937a369d89624c564d58d6d}
+
+
+\-Definicja w linii 23 pliku \-Data.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_data_ab51897fdf937a369d89624c564d58d6d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_data_ad817b2f9fd143b949d0deb3ad1ba6d5d}{\index{\-Data@{\-Data}!get@{get}}
+\index{get@{get}!Data@{\-Data}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Data\-::get} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_data_ad817b2f9fd143b949d0deb3ad1ba6d5d}
+
+
+\-Definicja w linii 8 pliku \-Data.\-cpp.
+
+\hypertarget{class_data_a642f78a648da7acf9df648cbd28b6f53}{\index{\-Data@{\-Data}!push@{push}}
+\index{push@{push}!Data@{\-Data}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Data\-::push} (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_data_a642f78a648da7acf9df648cbd28b6f53}
+
+
+\-Definicja w linii 3 pliku \-Data.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_data_a642f78a648da7acf9df648cbd28b6f53_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_data_a8ed62af1e1f9e271e475b882a3d3ea4d}{\index{\-Data@{\-Data}!size@{size}}
+\index{size@{size}!Data@{\-Data}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$\-::size\-\_\-type {\bf \-Data\-::size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_data_a8ed62af1e1f9e271e475b882a3d3ea4d}
+
+
+\-Definicja w linii 28 pliku \-Data.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_data_a8ed62af1e1f9e271e475b882a3d3ea4d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_data_a375ee0846e20237e857df59893228b68}{\index{\-Data@{\-Data}!data@{data}}
+\index{data@{data}!Data@{\-Data}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ {\bf \-Data\-::data}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_data_a375ee0846e20237e857df59893228b68}
+
+
+\-Definicja w linii 25 pliku \-Data.\-h.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_data_8h}{\-Data.\-h}\item 
+\hyperlink{_data_8cpp}{\-Data.\-cpp}\end{DoxyCompactItemize}

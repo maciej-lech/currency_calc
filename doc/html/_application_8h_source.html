@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>currency_calc: Plik źródłowy Application.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">currency_calc
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Dokumentacja projektu</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('_application_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Application.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_application_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef APPLICATION_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define APPLICATION_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;algorithm&gt;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="_enums_8h.html" title="Definicje typów wyliczeniowych wykorzystywanych w programie.">Enums.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="_log_8h.html" title="Definicja klasy Log, wyświetlającej informacje o działaniu programu.">Log.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="_converter_8h.html" title="Definicja klasy zarządzającej konwersją walut Converter.">Converter.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="_f_x_rate_8h.html" title="Definicja klasy FXRate, nadrzędnej dla klasy pobierania kursu walutowego.">FXRate.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="_f_x_rate_n_b_p_8h.html" title="Definicja klasy FXRateNBP, pobierającej kurs walutowy ze strony nbp.pl.">FXRateNBP.h</a>&quot;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a><a class="code" href="_application_8h.html#a8252dc0d1288d63fa78fa4296865379a">00020</a> <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> <a class="code" href="_application_8h.html#a8252dc0d1288d63fa78fa4296865379a" title="Stała z nazwą programu.">appName</a> = <span class="stringliteral">&quot;currency_calc&quot;</span>; 
+<a name="l00021"></a><a class="code" href="_application_8h.html#a846b07ad5be09b086d6d0e339a11ee4e">00021</a> <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> <a class="code" href="_application_8h.html#a846b07ad5be09b086d6d0e339a11ee4e" title="Stała z wersją programu.">appVersion</a> = <span class="stringliteral">&quot;1.0&quot;</span>; 
+<a name="l00022"></a><a class="code" href="_application_8h.html#aefbc0d64980146b6f9b96482a08d4e7b">00022</a> <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> <a class="code" href="_application_8h.html#aefbc0d64980146b6f9b96482a08d4e7b" title="Stała z opisem programu.">appInfo</a> = <span class="stringliteral">&quot;Currency calculator&quot;</span>; 
+<a name="l00023"></a><a class="code" href="_application_8h.html#aa3a8dada268c93dd0e2b7112cfa611eb">00023</a> <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> <a class="code" href="_application_8h.html#aa3a8dada268c93dd0e2b7112cfa611eb" title="Stała z autorami.">appAutors</a> = <span class="stringliteral">&quot;Maciej Lech &amp; Karol Sowa&quot;</span>; 
+<a name="l00024"></a><a class="code" href="_application_8h.html#a8cc8b02dfc03ba6f9fd7cf72e76b5c39">00024</a> <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> <a class="code" href="_application_8h.html#a8cc8b02dfc03ba6f9fd7cf72e76b5c39" title="Stała z datą utworzenia programu.">appRelDate</a> = <span class="stringliteral">&quot;January 2014&quot;</span>; 
+<a name="l00025"></a>00025 
+<a name="l00032"></a><a class="code" href="class_application.html">00032</a> <span class="keyword">class </span><a class="code" href="class_application.html" title="Główna klasa aplikacji.">Application</a>
+<a name="l00033"></a>00033 {
+<a name="l00034"></a>00034     <span class="keyword">private</span>:
+<a name="l00035"></a><a class="code" href="class_application.html#abd74a9391b24bd1a1586a1d8b88bb2d3">00035</a>         <span class="keyword">static</span> <a class="code" href="class_application.html" title="Główna klasa aplikacji.">Application</a>* <a class="code" href="class_application.html#abd74a9391b24bd1a1586a1d8b88bb2d3" title="Wskaźnik do instancji jedynego obiektu klasy.">instance</a>; 
+<a name="l00036"></a>00036 
+<a name="l00037"></a><a class="code" href="class_application.html#a196c830264295cd000204d0668e2262c">00037</a>         <span class="keywordtype">int</span> <a class="code" href="class_application.html#a196c830264295cd000204d0668e2262c" title="Informacja o lokalizacji danych wejściowych.">input</a>; 
+<a name="l00038"></a><a class="code" href="class_application.html#a3aaf22cf1c0799a24fb381b5d2a7bb52">00038</a>         <span class="keywordtype">int</span> <a class="code" href="class_application.html#a3aaf22cf1c0799a24fb381b5d2a7bb52" title="Informacja o lokalizacji danych wyjściowych.">output</a>; 
+<a name="l00039"></a><a class="code" href="class_application.html#ae3526813bef766d79da0af787c48af3a">00039</a>         <span class="keywordtype">int</span> <a class="code" href="class_application.html#ae3526813bef766d79da0af787c48af3a" title="Informacja o sposobie formatowania danych wyjściowych.">out_type</a>; 
+<a name="l00040"></a><a class="code" href="class_application.html#ad351bc6efdb11d1086bf82803f1c3e92">00040</a>         <span class="keywordtype">int</span> <a class="code" href="class_application.html#ad351bc6efdb11d1086bf82803f1c3e92" title="Informacja o źródle kursów walutowych.">ex_rate_algorithm</a>; 
+<a name="l00041"></a><a class="code" href="class_application.html#af116b891333df3a62cf85e3dc0859e03">00041</a>         <span class="keywordtype">bool</span> <a class="code" href="class_application.html#af116b891333df3a62cf85e3dc0859e03" title="Informacja, czy włączyć &quot;tryb krzykliwy&quot;.">verbose</a>; 
+<a name="l00042"></a><a class="code" href="class_application.html#ad81fdec0c72cb080edfab33439f0d2a9">00042</a>         std::string <a class="code" href="class_application.html#ad81fdec0c72cb080edfab33439f0d2a9" title="Waluta danych wejściowych.">in_currency</a>; 
+<a name="l00043"></a><a class="code" href="class_application.html#a163202d7dc3c0863883af922d88f6b08">00043</a>         std::string <a class="code" href="class_application.html#a163202d7dc3c0863883af922d88f6b08" title="Waluta danych wyjściowych.">out_currency</a>; 
+<a name="l00044"></a><a class="code" href="class_application.html#a4e66f842b9681694c2c3a7ab402a3373">00044</a>         std::string <a class="code" href="class_application.html#a4e66f842b9681694c2c3a7ab402a3373" title="Data kursów: &quot;RRMMDD&quot;, lub domyślnie najnowsze &quot;&quot;.">date</a>; 
+<a name="l00045"></a><a class="code" href="class_application.html#a2b3f25d468a1923a99ca00a17d613907">00045</a>         std::string <a class="code" href="class_application.html#a2b3f25d468a1923a99ca00a17d613907" title="Plik z danymi wejściowymi.">in_file</a>; 
+<a name="l00046"></a><a class="code" href="class_application.html#af3e196e2f013c693c29c3ac89a7631d1">00046</a>         std::string <a class="code" href="class_application.html#af3e196e2f013c693c29c3ac89a7631d1" title="Plik z danymi wyjściowymi.">out_file</a>; 
+<a name="l00047"></a>00047 
+<a name="l00051"></a>00051         <a class="code" href="class_application.html#afa8cc05ce6b6092be5ecdfdae44e05f8" title="Prywatny konstruktor.">Application</a>();
+<a name="l00055"></a>00055         <span class="keywordtype">int</span> <a class="code" href="class_application.html#a2013314d883802bfb12b6b445d5dabce" title="Parser linii poleceń.">parseCommandLine</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span>* argv[]);
+<a name="l00059"></a>00059         <span class="keywordtype">void</span> <a class="code" href="class_application.html#a347b2679d939278e31d7c6bafcd1f4c1" title="Wypisuje pomoc, z ewentualnymi błędami parsowania linii poleceń.">showUsage</a>(<span class="keyword">const</span> std::string&amp; err = <span class="stringliteral">&quot;&quot;</span>);
+<a name="l00063"></a>00063         <span class="keywordtype">void</span> <a class="code" href="class_application.html#a182ef99a13c7e3b34faa6efe83375b01" title="Wypisuje informacje o programie i autorach.">showAbout</a>();
+<a name="l00067"></a>00067         <span class="keywordtype">void</span> <a class="code" href="class_application.html#a8b2fa959a43f20b8c58f7e0d0ed0bc93" title="Ustawia domyślne opcje.">setDefault</a>();
+<a name="l00071"></a>00071         <span class="keywordtype">void</span> <a class="code" href="class_application.html#ae643f111fbb13606e91cf9156da09299" title="Drukuje opis błędu.">printError</a>(<span class="keyword">const</span> std::string&amp; err);
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073     <span class="keyword">public</span>:
+<a name="l00077"></a>00077         <span class="keyword">static</span> <a class="code" href="class_application.html" title="Główna klasa aplikacji.">Application</a>* <span class="keyword">get</span>();
+<a name="l00081"></a>00081         <span class="keywordtype">int</span> <a class="code" href="class_application.html#a08f47f2a3acf5691473d3d8bafae0577" title="Uruchamia dalsze działanie aplikacji.">run</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span>* argv[]);
+<a name="l00082"></a>00082 };
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084 <span class="preprocessor">#endif // APPLICATION_H</span>
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="_application_8h.html">Application.h</a>      </li>
+
+    <li class="footer">Wygenerowano Mon Jan 20 2014 14:27:22 dla currency_calc programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

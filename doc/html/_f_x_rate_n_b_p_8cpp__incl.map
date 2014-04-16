@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_f_x_rate_n_b_p_8h.html" title="Definicja klasy FXRateNBP, pobierającej kurs walutowy ze strony nbp.pl." alt="" coords="13,83,117,112"/>
+<area shape="rect" id="node7" href="$_f_x_rate_8h.html" title="Definicja klasy FXRate, nadrzędnej dla klasy pobierania kursu walutowego." alt="" coords="27,160,104,189"/>
+<area shape="rect" id="node10" href="$_c_u_r_l_wrapper_8h.html" title="Definicja wrappera CURLWrapper biblioteki CURL." alt="" coords="128,160,248,189"/>
+</map>

@@ -1,0 +1,149 @@
+\hypertarget{class_f_x_rate_n_b_p}{\section{\-Dokumentacja klasy \-F\-X\-Rate\-N\-B\-P}
+\label{class_f_x_rate_n_b_p}\index{\-F\-X\-Rate\-N\-B\-P@{\-F\-X\-Rate\-N\-B\-P}}
+}
+
+
+\-Klasa algorytmu pobierania kursów ze strony \href{http://www.nbp.pl}{\tt nbp.\-pl}.  
+
+
+
+
+{\ttfamily \#include $<$\-F\-X\-Rate\-N\-B\-P.\-h$>$}
+
+
+
+\-Diagram dziedziczenia dla \-F\-X\-Rate\-N\-B\-P\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_f_x_rate_n_b_p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Diagram współpracy dla \-F\-X\-Rate\-N\-B\-P\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_f_x_rate_n_b_p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_f_x_rate_n_b_p_accf3fcef0c6844e38a1c338c509be3a0}{$\sim$\-F\-X\-Rate\-N\-B\-P} ()
+\begin{DoxyCompactList}\small\item\em \-Wirtualny destruktor. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_f_x_rate_n_b_p_a9207ac2af86b2a28887aace843dc5a64}{get\-Cours} (const std\-::string \&in\-\_\-curr, const std\-::string \&out\-\_\-curr, const std\-::string \&data)
+\begin{DoxyCompactList}\small\item\em \-Funckja pobierania kursu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{class_f_x_rate_n_b_p_a882f90197f0306fdf3e911eb925d7474}{get\-Xml\-From\-Date} (std\-::string $\ast$dir\-\_\-file, std\-::string data)
+\begin{DoxyCompactList}\small\item\em \-Generuje nazwę pliku .xml, dla podanej daty. \end{DoxyCompactList}\item 
+double \hyperlink{class_f_x_rate_n_b_p_a4c69d9e03b697a2098d7031f54e883dc}{get\-Value} (std\-::string $\ast$xml, const std\-::string \&curr)
+\begin{DoxyCompactList}\small\item\em \-Wyszukuje odpowiedni kurs w pliku .xml z nbp.\-pl. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Klasa potomna od \-F\-T\-Rate, wykorzystywana we wzorcu {\bfseries strategy}, wyboru algorytmu pobierania kursów walutowych.\par
+ \-Pobiera kursy walutowe ze strony \-Narodowego \-Banku \-Polskiego, wykorzystując \hyperlink{class_c_u_r_l_wrapper}{\-C\-U\-R\-L\-Wrapper}. 
+
+\-Definicja w linii 22 pliku \-F\-X\-Rate\-N\-B\-P.\-h.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_f_x_rate_n_b_p_accf3fcef0c6844e38a1c338c509be3a0}{\index{\-F\-X\-Rate\-N\-B\-P@{\-F\-X\-Rate\-N\-B\-P}!$\sim$\-F\-X\-Rate\-N\-B\-P@{$\sim$\-F\-X\-Rate\-N\-B\-P}}
+\index{$\sim$\-F\-X\-Rate\-N\-B\-P@{$\sim$\-F\-X\-Rate\-N\-B\-P}!FXRateNBP@{\-F\-X\-Rate\-N\-B\-P}}
+\subsubsection[{$\sim$\-F\-X\-Rate\-N\-B\-P}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-F\-X\-Rate\-N\-B\-P\-::$\sim$\-F\-X\-Rate\-N\-B\-P} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_f_x_rate_n_b_p_accf3fcef0c6844e38a1c338c509be3a0}
+
+
+\-Definicja w linii 38 pliku \-F\-X\-Rate\-N\-B\-P.\-h.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_f_x_rate_n_b_p_a9207ac2af86b2a28887aace843dc5a64}{\index{\-F\-X\-Rate\-N\-B\-P@{\-F\-X\-Rate\-N\-B\-P}!get\-Cours@{get\-Cours}}
+\index{get\-Cours@{get\-Cours}!FXRateNBP@{\-F\-X\-Rate\-N\-B\-P}}
+\subsubsection[{get\-Cours}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-F\-X\-Rate\-N\-B\-P\-::get\-Cours} (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{in\-\_\-curr, }
+\item[{const std\-::string \&}]{out\-\_\-curr, }
+\item[{const std\-::string \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_f_x_rate_n_b_p_a9207ac2af86b2a28887aace843dc5a64}
+
+
+\-Implementuje \hyperlink{class_f_x_rate_a702a09f1e591c4b80c576cdaee938a25}{\-F\-X\-Rate}.
+
+
+
+\-Definicja w linii 58 pliku \-F\-X\-Rate\-N\-B\-P.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_f_x_rate_n_b_p_a9207ac2af86b2a28887aace843dc5a64_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_f_x_rate_n_b_p_a4c69d9e03b697a2098d7031f54e883dc}{\index{\-F\-X\-Rate\-N\-B\-P@{\-F\-X\-Rate\-N\-B\-P}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!FXRateNBP@{\-F\-X\-Rate\-N\-B\-P}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-F\-X\-Rate\-N\-B\-P\-::get\-Value} (
+\begin{DoxyParamCaption}
+\item[{std\-::string $\ast$}]{xml, }
+\item[{const std\-::string \&}]{curr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_f_x_rate_n_b_p_a4c69d9e03b697a2098d7031f54e883dc}
+
+
+\-Definicja w linii 19 pliku \-F\-X\-Rate\-N\-B\-P.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_f_x_rate_n_b_p_a4c69d9e03b697a2098d7031f54e883dc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_f_x_rate_n_b_p_a882f90197f0306fdf3e911eb925d7474}{\index{\-F\-X\-Rate\-N\-B\-P@{\-F\-X\-Rate\-N\-B\-P}!get\-Xml\-From\-Date@{get\-Xml\-From\-Date}}
+\index{get\-Xml\-From\-Date@{get\-Xml\-From\-Date}!FXRateNBP@{\-F\-X\-Rate\-N\-B\-P}}
+\subsubsection[{get\-Xml\-From\-Date}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-F\-X\-Rate\-N\-B\-P\-::get\-Xml\-From\-Date} (
+\begin{DoxyParamCaption}
+\item[{std\-::string $\ast$}]{dir\-\_\-file, }
+\item[{std\-::string}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_f_x_rate_n_b_p_a882f90197f0306fdf3e911eb925d7474}
+
+
+\-Definicja w linii 3 pliku \-F\-X\-Rate\-N\-B\-P.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_f_x_rate_n_b_p_a882f90197f0306fdf3e911eb925d7474_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_f_x_rate_n_b_p_8h}{\-F\-X\-Rate\-N\-B\-P.\-h}\item 
+\hyperlink{_f_x_rate_n_b_p_8cpp}{\-F\-X\-Rate\-N\-B\-P.\-cpp}\end{DoxyCompactItemize}

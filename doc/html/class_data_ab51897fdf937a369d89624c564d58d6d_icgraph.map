@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_output_builder_file.html#a0906f1b222f169060fbdbb3d1026b897" title="Funckaja drukuje dane do pliku." alt="" coords="147,5,309,35"/>
+<area shape="rect" id="node5" href="$class_output_builder_stream.html#a97a94cd7b144697ffbe0876da8e8e6db" title="Funckaja drukuje dane na standardowym wyjściu." alt="" coords="137,59,319,88"/>
+<area shape="rect" id="node7" href="$class_output_data.html#a46b8027d2773c914affbb6051b625930" title="Funkcja przeliczająca dane dla podanego kursu." alt="" coords="155,112,301,141"/>
+<area shape="rect" id="node9" href="$class_output_builder.html#aa313904a69d986ea1c1e22b0a52b3d87" title="Generuje dane wyjściowe." alt="" coords="369,112,553,141"/>
+<area shape="rect" id="node11" href="$class_converter.html#aa74b89ae3f4652130726fb64ce970020" title="Generuje dane wyjściowe." alt="" coords="603,112,752,141"/>
+<area shape="rect" id="node13" href="$class_application.html#a08f47f2a3acf5691473d3d8bafae0577" title="Uruchamia dalsze działanie aplikacji." alt="" coords="801,112,919,141"/>
+<area shape="rect" id="node15" href="$main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="main" alt="" coords="969,112,1020,141"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_converter_8h.html" title="Definicja klasy zarządzającej konwersją walut Converter." alt="" coords="368,315,459,344"/>
+<area shape="rect" id="node13" href="$_input_data_stream_8h.html" title="Definicja klasy InputDataStream, pobierającej dane ze standardowego wejścia." alt="" coords="149,83,283,112"/>
+<area shape="rect" id="node18" href="$_input_data_file_8h.html" title="Definicja klasy InputDataFile, pobierającej dane wejściowe z pliku." alt="" coords="327,83,441,112"/>
+<area shape="rect" id="node23" href="$_output_builder_8h.html" title="Definicja klasy OutputBuilder, nadrzędnej klasy budującej dane wyjścia." alt="" coords="509,160,624,189"/>
+<area shape="rect" id="node38" href="$_output_data_8h.html" title="Definicja klasy OutputData, pochodnej klasy Data, przechowującej dane wyjściowe." alt="" coords="516,83,617,112"/>
+<area shape="rect" id="node43" href="$_input_data_8cpp.html" title="InputData.cpp" alt="" coords="641,83,748,112"/>
+<area shape="rect" id="node5" href="$_application_8h.html" title="Definicja głównej klasy aplikacji Application." alt="" coords="301,392,400,421"/>
+<area shape="rect" id="node11" href="$_converter_8cpp.html" title="Converter.cpp" alt="" coords="424,392,531,421"/>
+<area shape="rect" id="node7" href="$_application_8cpp.html" title="Application.cpp" alt="" coords="233,469,348,499"/>
+<area shape="rect" id="node9" href="$main_8cpp.html" title="Funkcja main()." alt="" coords="372,469,449,499"/>
+<area shape="rect" id="node16" href="$_input_data_stream_8cpp.html" title="InputDataStream.cpp" alt="" coords="29,160,179,189"/>
+<area shape="rect" id="node21" href="$_input_data_file_8cpp.html" title="InputDataFile.cpp" alt="" coords="253,160,384,189"/>
+<area shape="rect" id="node26" href="$_output_builder_stream_8h.html" title="Definicja klasy OutputBuilderStream, budującej i prezentującej dane na standardowym wyjściu..." alt="" coords="499,237,656,267"/>
+<area shape="rect" id="node31" href="$_output_builder_file_8h.html" title="Definicja klasy OutputBuilderFile, budującej i zapisującej dane wyjściowe do pliku." alt="" coords="680,237,819,267"/>
+<area shape="rect" id="node36" href="$_output_builder_8cpp.html" title="OutputBuilder.cpp" alt="" coords="843,237,973,267"/>
+<area shape="rect" id="node29" href="$_output_builder_stream_8cpp.html" title="OutputBuilderStream.cpp" alt="" coords="488,315,661,344"/>
+<area shape="rect" id="node34" href="$_output_builder_file_8cpp.html" title="OutputBuilderFile.cpp" alt="" coords="685,315,840,344"/>
+<area shape="rect" id="node41" href="$_output_data_8cpp.html" title="OutputData.cpp" alt="" coords="648,160,765,189"/>
+</map>

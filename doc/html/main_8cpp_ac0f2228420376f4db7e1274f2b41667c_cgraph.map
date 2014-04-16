@@ -1,0 +1,22 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_application.html#af74c95b803fba6c2a5fd47a3ae5fda36" title="Zwraca instancję obiektu." alt="" coords="581,5,699,35"/>
+<area shape="rect" id="node9" href="$class_application.html#a08f47f2a3acf5691473d3d8bafae0577" title="Uruchamia dalsze działanie aplikacji." alt="" coords="108,191,225,220"/>
+<area shape="rect" id="node5" href="$class_application.html#afa8cc05ce6b6092be5ecdfdae44e05f8" title="Prywatny konstruktor." alt="" coords="783,5,948,35"/>
+<area shape="rect" id="node7" href="$class_application.html#a8b2fa959a43f20b8c58f7e0d0ed0bc93" title="Ustawia domyślne opcje." alt="" coords="999,5,1156,35"/>
+<area shape="rect" id="node11" href="$class_application.html#a2013314d883802bfb12b6b445d5dabce" title="Parser linii poleceń." alt="" coords="276,111,497,140"/>
+<area shape="rect" id="node16" href="$class_application.html#ae643f111fbb13606e91cf9156da09299" title="Drukuje opis błędu." alt="" coords="789,112,941,141"/>
+<area shape="rect" id="node21" href="$class_converter.html#a6a2bb96d0b8d1dd5ebbe4685cec6f203" title="Pobiera dane wejściowe." alt="" coords="317,216,456,245"/>
+<area shape="rect" id="node26" href="$class_converter.html#aff1b8d27be5c69b531d10f8451e07ca0" title="Pobiera kurs." alt="" coords="309,269,464,299"/>
+<area shape="rect" id="node30" href="$class_f_x_rate.html#a1d5a691114520d11109841a1b9dae6a4" title="Zwraca kurs." alt="" coords="557,323,723,352"/>
+<area shape="rect" id="node32" href="$class_converter.html#aa74b89ae3f4652130726fb64ce970020" title="Generuje dane wyjściowe." alt="" coords="312,375,461,404"/>
+<area shape="rect" id="node14" href="$class_application.html#a347b2679d939278e31d7c6bafcd1f4c1" title="Wypisuje pomoc, z ewentualnymi błędami parsowania linii poleceń." alt="" coords="555,59,725,88"/>
+<area shape="rect" id="node18" href="$class_application.html#a182ef99a13c7e3b34faa6efe83375b01" title="Wypisuje informacje o programie i autorach." alt="" coords="557,112,723,141"/>
+<area shape="rect" id="node23" href="$class_input_data.html#ae1d8f8a2a2a7f7d4c4d3595ed767ef3d" title="Pobiera dane wejściowe. Funckja do przeciążenia dla klas pochodnych." alt="" coords="571,216,709,245"/>
+<area shape="rect" id="node28" href="$class_f_x_rate.html#a702a09f1e591c4b80c576cdaee938a25" title="Funckja pobierania kursu, do przeciążenia przez klasę potomną." alt="" coords="575,269,705,299"/>
+<area shape="rect" id="node34" href="$class_output_builder.html#aa313904a69d986ea1c1e22b0a52b3d87" title="Generuje dane wyjściowe." alt="" coords="548,376,732,405"/>
+<area shape="rect" id="node45" href="$class_output_builder.html#a5609a1e125b92c4d492724db53ffdf98" title="Funkcja do prezentacji danych, przeciążana przez klasy pochodne." alt="" coords="571,429,709,459"/>
+<area shape="rect" id="node36" href="$class_output_data.html#a46b8027d2773c914affbb6051b625930" title="Funkcja przeliczająca dane dla podanego kursu." alt="" coords="792,376,939,405"/>
+<area shape="rect" id="node38" href="$class_data.html#ad20496a4db65c1aebaad4217f876e19c" title="Zwraca iterator na początek." alt="" coords="1031,323,1124,352"/>
+<area shape="rect" id="node40" href="$class_data.html#ab51897fdf937a369d89624c564d58d6d" title="Zwraca iterator na koniec." alt="" coords="1036,376,1119,405"/>
+<area shape="rect" id="node42" href="$class_data.html#a642f78a648da7acf9df648cbd28b6f53" title="Dodaje element do wektora danych." alt="" coords="1033,429,1121,459"/>
+</map>

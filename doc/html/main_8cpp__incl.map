@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_application_8h.html" title="Definicja głównej klasy aplikacji Application." alt="" coords="696,83,795,112"/>
+<area shape="rect" id="node11" href="$_enums_8h.html" title="Definicje typów wyliczeniowych wykorzystywanych w programie." alt="" coords="191,315,265,344"/>
+<area shape="rect" id="node13" href="$_log_8h.html" title="Definicja klasy Log, wyświetlającej informacje o działaniu programu." alt="" coords="253,392,307,421"/>
+<area shape="rect" id="node17" href="$_converter_8h.html" title="Definicja klasy zarządzającej konwersją walut Converter." alt="" coords="601,160,692,189"/>
+<area shape="rect" id="node42" href="$_f_x_rate_8h.html" title="Definicja klasy FXRate, nadrzędnej dla klasy pobierania kursu walutowego." alt="" coords="936,237,1013,267"/>
+<area shape="rect" id="node64" href="$_f_x_rate_n_b_p_8h.html" title="Definicja klasy FXRateNBP, pobierającej kurs walutowy ze strony nbp.pl." alt="" coords="960,160,1064,189"/>
+<area shape="rect" id="node20" href="$_input_data_8h.html" title="Definicja klasy InputData, pochodnej klasy Data oraz nadrzędnej dla klas pobierających dane wejściowe..." alt="" coords="593,469,684,499"/>
+<area shape="rect" id="node30" href="$_input_data_stream_8h.html" title="Definicja klasy InputDataStream, pobierającej dane ze standardowego wejścia." alt="" coords="728,237,861,267"/>
+<area shape="rect" id="node36" href="$_input_data_file_8h.html" title="Definicja klasy InputDataFile, pobierającej dane wejściowe z pliku." alt="" coords="589,237,704,267"/>
+<area shape="rect" id="node45" href="$_output_builder_8h.html" title="Definicja klasy OutputBuilder, nadrzędnej klasy budującej dane wyjścia." alt="" coords="396,315,511,344"/>
+<area shape="rect" id="node53" href="$_output_builder_stream_8h.html" title="Definicja klasy OutputBuilderStream, budującej i prezentującej dane na standardowym wyjściu..." alt="" coords="195,237,352,267"/>
+<area shape="rect" id="node58" href="$_output_builder_file_8h.html" title="Definicja klasy OutputBuilderFile, budującej i zapisującej dane wyjściowe do pliku." alt="" coords="376,237,515,267"/>
+<area shape="rect" id="node25" href="$_data_8h.html" title="Definicja klasy Data modelującej kontener vector, dla przechowywania danych wejściowych i wyjściowych..." alt="" coords="532,547,593,576"/>
+<area shape="rect" id="node48" href="$_output_data_8h.html" title="Definicja klasy OutputData, pochodnej klasy Data, przechowującej dane wyjściowe." alt="" coords="415,392,516,421"/>
+<area shape="rect" id="node68" href="$_c_u_r_l_wrapper_8h.html" title="Definicja wrappera CURLWrapper biblioteki CURL." alt="" coords="1088,237,1208,267"/>
+</map>

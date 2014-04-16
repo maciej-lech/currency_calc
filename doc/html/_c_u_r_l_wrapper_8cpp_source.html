@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>currency_calc: Plik źródłowy CURLWrapper.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">currency_calc
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Dokumentacja projektu</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('_c_u_r_l_wrapper_8cpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">CURLWrapper.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_u_r_l_wrapper_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &quot;<a class="code" href="_c_u_r_l_wrapper_8h.html" title="Definicja wrappera CURLWrapper biblioteki CURL.">CURLWrapper.h</a>&quot;</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 CURL* <a class="code" href="class_c_u_r_l_wrapper.html#a6e4ca915cbdfcca109fec4f46da430a2" title="Handler curl.">CURLWrapper::handle</a> = NULL;
+<a name="l00004"></a>00004 std::string <a class="code" href="class_c_u_r_l_wrapper.html#ac67efd13ddfae37e5d7965c124a88120" title="Dane typu string.">CURLWrapper::data</a>;
+<a name="l00005"></a>00005 
+<a name="l00006"></a><a class="code" href="class_c_u_r_l_wrapper.html#a29bb6d7868fc555dd87c099f5b38a571">00006</a> <a class="code" href="class_c_u_r_l_wrapper.html#a29bb6d7868fc555dd87c099f5b38a571" title="Konstruktor inicjujący bibliotekę curl.">CURLWrapper::CURLWrapper</a>()
+<a name="l00007"></a>00007 {
+<a name="l00008"></a>00008     curl_global_init(CURL_GLOBAL_ALL);
+<a name="l00009"></a>00009         <a class="code" href="class_c_u_r_l_wrapper.html#a6e4ca915cbdfcca109fec4f46da430a2" title="Handler curl.">handle</a> = curl_easy_init();
+<a name="l00010"></a>00010 }
+<a name="l00011"></a>00011 
+<a name="l00012"></a><a class="code" href="class_c_u_r_l_wrapper.html#a62ff4d4836e61952283c7ff8486a375e">00012</a> <a class="code" href="class_c_u_r_l_wrapper.html#a62ff4d4836e61952283c7ff8486a375e" title="Destruktor zwalniający zasoby wykorzystywane przez bibliotekę curl.">CURLWrapper::~CURLWrapper</a>()
+<a name="l00013"></a>00013 {
+<a name="l00014"></a>00014     <span class="keywordflow">if</span> (<a class="code" href="class_c_u_r_l_wrapper.html#a6e4ca915cbdfcca109fec4f46da430a2" title="Handler curl.">handle</a>)
+<a name="l00015"></a>00015         curl_easy_cleanup(<a class="code" href="class_c_u_r_l_wrapper.html#a6e4ca915cbdfcca109fec4f46da430a2" title="Handler curl.">handle</a>);
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017         curl_global_cleanup();
+<a name="l00018"></a>00018 }
+<a name="l00019"></a>00019 
+<a name="l00020"></a><a class="code" href="class_c_u_r_l_wrapper.html#a5618ea572dcba5a643b2f18986ba2619">00020</a> <span class="keywordtype">int</span> <a class="code" href="class_c_u_r_l_wrapper.html#a5618ea572dcba5a643b2f18986ba2619" title="Funkcja callback do zapisu przez bibliotekę curl.">CURLWrapper::curlWriteMemoryCallback</a>(<span class="keywordtype">void</span> *contents, <span class="keywordtype">size_t</span> size, <span class="keywordtype">size_t</span> blocks, <span class="keywordtype">void</span> *mem_data)
+<a name="l00021"></a>00021 {
+<a name="l00022"></a>00022     <span class="keywordtype">size_t</span> real_size = size * blocks;
+<a name="l00023"></a>00023     <a class="code" href="class_c_u_r_l_wrapper.html#ac67efd13ddfae37e5d7965c124a88120" title="Dane typu string.">data</a>.append((<span class="keyword">const</span> <span class="keywordtype">char</span>*) contents, real_size);
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025     <span class="keywordflow">return</span> real_size;
+<a name="l00026"></a>00026 }
+<a name="l00027"></a>00027 
+<a name="l00028"></a><a class="code" href="class_c_u_r_l_wrapper.html#ab30b15a7f68ca583e42a6db2f4e4f745">00028</a> <span class="keywordtype">int</span> <a class="code" href="class_c_u_r_l_wrapper.html#ab30b15a7f68ca583e42a6db2f4e4f745" title="Pobiera dane przez protokół http.">CURLWrapper::downloadData</a>(<span class="keyword">const</span> std::string&amp; url)
+<a name="l00029"></a>00029 {
+<a name="l00030"></a>00030     <span class="keywordflow">if</span> (!<a class="code" href="class_c_u_r_l_wrapper.html#a6e4ca915cbdfcca109fec4f46da430a2" title="Handler curl.">handle</a>)
+<a name="l00031"></a>00031         <span class="keywordflow">return</span> 1;
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033     <a class="code" href="class_c_u_r_l_wrapper.html#ac67efd13ddfae37e5d7965c124a88120" title="Dane typu string.">data</a>.clear();
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035         curl_easy_setopt(<a class="code" href="class_c_u_r_l_wrapper.html#a6e4ca915cbdfcca109fec4f46da430a2" title="Handler curl.">handle</a>, CURLOPT_URL, url.c_str());
+<a name="l00036"></a>00036         curl_easy_setopt(<a class="code" href="class_c_u_r_l_wrapper.html#a6e4ca915cbdfcca109fec4f46da430a2" title="Handler curl.">handle</a>, CURLOPT_WRITEFUNCTION, <a class="code" href="class_c_u_r_l_wrapper.html#a5618ea572dcba5a643b2f18986ba2619" title="Funkcja callback do zapisu przez bibliotekę curl.">curlWriteMemoryCallback</a>);
+<a name="l00037"></a>00037         <span class="comment">//curl_easy_setopt(handle, CURLOPT_WRITEDATA, (void*) mem_data);</span>
+<a name="l00038"></a>00038         <span class="comment">//curl_easy_setopt(handle, CURLOPT_USERAGENT, MYUSERAGENT);</span>
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040         CURLcode res = curl_easy_perform(<a class="code" href="class_c_u_r_l_wrapper.html#a6e4ca915cbdfcca109fec4f46da430a2" title="Handler curl.">handle</a>);
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042         <span class="keywordflow">if</span> (res != CURLE_OK)
+<a name="l00043"></a>00043         <span class="keywordflow">return</span> 1;
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045         <span class="keywordflow">return</span> 0;
+<a name="l00046"></a>00046 }
+<a name="l00047"></a>00047 
+<a name="l00048"></a><a class="code" href="class_c_u_r_l_wrapper.html#af73bac595dd43910a0fc63206662f8bd">00048</a> std::string* <a class="code" href="class_c_u_r_l_wrapper.html#af73bac595dd43910a0fc63206662f8bd" title="Zwraca wskaźnik na pobrane dane.">CURLWrapper::getDataPointer</a>()
+<a name="l00049"></a>00049 {
+<a name="l00050"></a>00050     <span class="keywordflow">return</span> &amp;<a class="code" href="class_c_u_r_l_wrapper.html#ac67efd13ddfae37e5d7965c124a88120" title="Dane typu string.">data</a>;
+<a name="l00051"></a>00051 }
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="_c_u_r_l_wrapper_8cpp.html">CURLWrapper.cpp</a>      </li>
+
+    <li class="footer">Wygenerowano Mon Jan 20 2014 14:27:22 dla currency_calc programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

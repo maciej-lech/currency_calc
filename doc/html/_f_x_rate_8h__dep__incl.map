@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_converter_8h.html" title="Definicja klasy zarządzającej konwersją walut Converter." alt="" coords="57,83,148,112"/>
+<area shape="rect" id="node5" href="$_application_8h.html" title="Definicja głównej klasy aplikacji Application." alt="" coords="136,160,235,189"/>
+<area shape="rect" id="node14" href="$_f_x_rate_n_b_p_8h.html" title="Definicja klasy FXRateNBP, pobierającej kurs walutowy ze strony nbp.pl." alt="" coords="223,83,327,112"/>
+<area shape="rect" id="node19" href="$_f_x_rate_8cpp.html" title="FXRate.cpp" alt="" coords="351,83,444,112"/>
+<area shape="rect" id="node11" href="$_converter_8cpp.html" title="Converter.cpp" alt="" coords="5,160,112,189"/>
+<area shape="rect" id="node7" href="$_application_8cpp.html" title="Application.cpp" alt="" coords="68,237,183,267"/>
+<area shape="rect" id="node9" href="$main_8cpp.html" title="Funkcja main()." alt="" coords="207,237,284,267"/>
+<area shape="rect" id="node17" href="$_f_x_rate_n_b_p_8cpp.html" title="FXRateNBP.cpp" alt="" coords="259,160,379,189"/>
+</map>

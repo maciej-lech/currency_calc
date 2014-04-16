@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_output_data.html#a46b8027d2773c914affbb6051b625930" title="Funkcja przeliczająca dane dla podanego kursu." alt="" coords="240,59,387,88"/>
+<area shape="rect" id="node5" href="$class_data.html#ad20496a4db65c1aebaad4217f876e19c" title="Zwraca iterator na początek." alt="" coords="436,5,529,35"/>
+<area shape="rect" id="node7" href="$class_data.html#ab51897fdf937a369d89624c564d58d6d" title="Zwraca iterator na koniec." alt="" coords="441,59,524,88"/>
+<area shape="rect" id="node9" href="$class_data.html#a642f78a648da7acf9df648cbd28b6f53" title="Dodaje element do wektora danych." alt="" coords="439,112,527,141"/>
+</map>

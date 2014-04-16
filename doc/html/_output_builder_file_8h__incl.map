@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$_enums_8h.html" title="Definicje typów wyliczeniowych wykorzystywanych w programie." alt="" coords="96,83,171,112"/>
+<area shape="rect" id="node7" href="$_output_builder_8h.html" title="Definicja klasy OutputBuilder, nadrzędnej klasy budującej dane wyjścia." alt="" coords="195,83,309,112"/>
+<area shape="rect" id="node9" href="$_input_data_8h.html" title="Definicja klasy InputData, pochodnej klasy Data oraz nadrzędnej dla klas pobierających dane wejściowe..." alt="" coords="165,237,256,267"/>
+<area shape="rect" id="node20" href="$_output_data_8h.html" title="Definicja klasy OutputData, pochodnej klasy Data, przechowującej dane wyjściowe." alt="" coords="245,160,347,189"/>
+<area shape="rect" id="node15" href="$_data_8h.html" title="Definicja klasy Data modelującej kontener vector, dla przechowywania danych wejściowych i wyjściowych..." alt="" coords="256,315,317,344"/>
+</map>

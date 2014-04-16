@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>currency_calc: Plik źródłowy Data.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">currency_calc
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Dokumentacja projektu</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('_data_8cpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Data.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_data_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &quot;<a class="code" href="_data_8h.html" title="Definicja klasy Data modelującej kontener vector, dla przechowywania danych wejściowych i wyjściowych...">Data.h</a>&quot;</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a><a class="code" href="class_data.html#a642f78a648da7acf9df648cbd28b6f53">00003</a> <span class="keywordtype">void</span> <a class="code" href="class_data.html#a642f78a648da7acf9df648cbd28b6f53" title="Dodaje element do wektora danych.">Data::push</a>(<span class="keywordtype">double</span> value)
+<a name="l00004"></a>00004 {
+<a name="l00005"></a>00005     this-&gt;<a class="code" href="class_data.html#a375ee0846e20237e857df59893228b68" title="Wektor liczb zmiennoprzecinkowych.">data</a>.push_back(value);
+<a name="l00006"></a>00006 }
+<a name="l00007"></a>00007 
+<a name="l00008"></a><a class="code" href="class_data.html#ad817b2f9fd143b949d0deb3ad1ba6d5d">00008</a> <span class="keywordtype">double</span> <a class="code" href="class_data.html#ad817b2f9fd143b949d0deb3ad1ba6d5d" title="Wyświetla element wektora.">Data::get</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i)
+<a name="l00009"></a>00009 {
+<a name="l00010"></a>00010     <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_data.html#a375ee0846e20237e857df59893228b68" title="Wektor liczb zmiennoprzecinkowych.">data</a>.at(i);
+<a name="l00011"></a>00011 }
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="comment">/*void Data::copyData(std::istream_iterator&lt;double&gt; first, std::istream_iterator&lt;double&gt; last)</span>
+<a name="l00014"></a>00014 <span class="comment">{</span>
+<a name="l00015"></a>00015 <span class="comment">    copy(first, last, std::back_inserter(data));</span>
+<a name="l00016"></a>00016 <span class="comment">}*/</span>
+<a name="l00017"></a>00017 
+<a name="l00018"></a><a class="code" href="class_data.html#ad20496a4db65c1aebaad4217f876e19c">00018</a> std::vector&lt;double&gt;::iterator <a class="code" href="class_data.html#ad20496a4db65c1aebaad4217f876e19c" title="Zwraca iterator na początek.">Data::begin</a>()
+<a name="l00019"></a>00019 {
+<a name="l00020"></a>00020     <span class="keywordflow">return</span> <a class="code" href="class_data.html#a375ee0846e20237e857df59893228b68" title="Wektor liczb zmiennoprzecinkowych.">data</a>.begin();
+<a name="l00021"></a>00021 }
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="class_data.html#ab51897fdf937a369d89624c564d58d6d">00023</a> std::vector&lt;double&gt;::iterator <a class="code" href="class_data.html#ab51897fdf937a369d89624c564d58d6d" title="Zwraca iterator na koniec.">Data::end</a>()
+<a name="l00024"></a>00024 {
+<a name="l00025"></a>00025     <span class="keywordflow">return</span> <a class="code" href="class_data.html#a375ee0846e20237e857df59893228b68" title="Wektor liczb zmiennoprzecinkowych.">data</a>.end();
+<a name="l00026"></a>00026 }
+<a name="l00027"></a>00027 
+<a name="l00028"></a><a class="code" href="class_data.html#a8ed62af1e1f9e271e475b882a3d3ea4d">00028</a> std::vector&lt;double&gt;::size_type <a class="code" href="class_data.html#a8ed62af1e1f9e271e475b882a3d3ea4d" title="Zwraca ilość elementów wektora.">Data::size</a>()
+<a name="l00029"></a>00029 {
+<a name="l00030"></a>00030     <span class="keywordflow">return</span> <a class="code" href="class_data.html#a375ee0846e20237e857df59893228b68" title="Wektor liczb zmiennoprzecinkowych.">data</a>.size();
+<a name="l00031"></a>00031 }
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="_data_8cpp.html">Data.cpp</a>      </li>
+
+    <li class="footer">Wygenerowano Mon Jan 20 2014 14:27:22 dla currency_calc programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_application.html#afa8cc05ce6b6092be5ecdfdae44e05f8" title="Prywatny konstruktor." alt="" coords="215,57,380,87"/>
+<area shape="rect" id="node5" href="$class_application.html#af74c95b803fba6c2a5fd47a3ae5fda36" title="Zwraca instancję obiektu." alt="" coords="429,57,547,87"/>
+<area shape="rect" id="node7" href="$class_application.html#a2013314d883802bfb12b6b445d5dabce" title="Parser linii poleceń." alt="" coords="596,5,817,35"/>
+<area shape="rect" id="node9" href="$class_application.html#a08f47f2a3acf5691473d3d8bafae0577" title="Uruchamia dalsze działanie aplikacji." alt="" coords="868,56,985,85"/>
+<area shape="rect" id="node11" href="$main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="main" alt="" coords="1036,83,1087,112"/>
+</map>

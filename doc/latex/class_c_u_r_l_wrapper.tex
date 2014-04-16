@@ -1,0 +1,176 @@
+\hypertarget{class_c_u_r_l_wrapper}{\section{\-Dokumentacja klasy \-C\-U\-R\-L\-Wrapper}
+\label{class_c_u_r_l_wrapper}\index{\-C\-U\-R\-L\-Wrapper@{\-C\-U\-R\-L\-Wrapper}}
+}
+
+
+\-Wrapper biblioteki \-C\-U\-R\-L do pobierania danych przez protokół http.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-U\-R\-L\-Wrapper.\-h$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_u_r_l_wrapper_a29bb6d7868fc555dd87c099f5b38a571}{\-C\-U\-R\-L\-Wrapper} ()
+\begin{DoxyCompactList}\small\item\em \-Konstruktor inicjujący bibliotekę curl. \end{DoxyCompactList}\item 
+\hyperlink{class_c_u_r_l_wrapper_a62ff4d4836e61952283c7ff8486a375e}{$\sim$\-C\-U\-R\-L\-Wrapper} ()
+\begin{DoxyCompactList}\small\item\em \-Destruktor zwalniający zasoby wykorzystywane przez bibliotekę curl. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_c_u_r_l_wrapper_ab30b15a7f68ca583e42a6db2f4e4f745}{download\-Data} (const std\-::string \&url)
+\begin{DoxyCompactList}\small\item\em \-Pobiera dane przez protokół http. \end{DoxyCompactList}\item 
+static std\-::string $\ast$ \hyperlink{class_c_u_r_l_wrapper_af73bac595dd43910a0fc63206662f8bd}{get\-Data\-Pointer} ()
+\begin{DoxyCompactList}\small\item\em \-Zwraca wskaźnik na pobrane dane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Statyczne metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_c_u_r_l_wrapper_a5618ea572dcba5a643b2f18986ba2619}{curl\-Write\-Memory\-Callback} (void $\ast$contents, size\-\_\-t size, size\-\_\-t blocks, void $\ast$mem\-\_\-data)
+\begin{DoxyCompactList}\small\item\em \-Funkcja callback do zapisu przez bibliotekę curl. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Statyczne atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+static \-C\-U\-R\-L $\ast$ \hyperlink{class_c_u_r_l_wrapper_a6e4ca915cbdfcca109fec4f46da430a2}{handle} = \-N\-U\-L\-L
+\begin{DoxyCompactList}\small\item\em \-Handler curl. \end{DoxyCompactList}\item 
+static std\-::string \hyperlink{class_c_u_r_l_wrapper_ac67efd13ddfae37e5d7965c124a88120}{data}
+\begin{DoxyCompactList}\small\item\em \-Dane typu string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Wrapper biblioteki \href{http://curl.haxx.se/libcurl/}{\tt \-C\-U\-R\-L}, wykorzystywany przez klasę \hyperlink{class_f_x_rate_n_b_p}{\-F\-X\-Rate\-N\-B\-P} do pobierania pliku .xml z kursami walutowymi. \-Klasa ta jest statyczna. 
+
+\-Definicja w linii 21 pliku \-C\-U\-R\-L\-Wrapper.\-h.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_c_u_r_l_wrapper_a29bb6d7868fc555dd87c099f5b38a571}{\index{\-C\-U\-R\-L\-Wrapper@{\-C\-U\-R\-L\-Wrapper}!\-C\-U\-R\-L\-Wrapper@{\-C\-U\-R\-L\-Wrapper}}
+\index{\-C\-U\-R\-L\-Wrapper@{\-C\-U\-R\-L\-Wrapper}!CURLWrapper@{\-C\-U\-R\-L\-Wrapper}}
+\subsubsection[{\-C\-U\-R\-L\-Wrapper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-U\-R\-L\-Wrapper\-::\-C\-U\-R\-L\-Wrapper} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_u_r_l_wrapper_a29bb6d7868fc555dd87c099f5b38a571}
+
+
+\-Definicja w linii 6 pliku \-C\-U\-R\-L\-Wrapper.\-cpp.
+
+\hypertarget{class_c_u_r_l_wrapper_a62ff4d4836e61952283c7ff8486a375e}{\index{\-C\-U\-R\-L\-Wrapper@{\-C\-U\-R\-L\-Wrapper}!$\sim$\-C\-U\-R\-L\-Wrapper@{$\sim$\-C\-U\-R\-L\-Wrapper}}
+\index{$\sim$\-C\-U\-R\-L\-Wrapper@{$\sim$\-C\-U\-R\-L\-Wrapper}!CURLWrapper@{\-C\-U\-R\-L\-Wrapper}}
+\subsubsection[{$\sim$\-C\-U\-R\-L\-Wrapper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-U\-R\-L\-Wrapper\-::$\sim$\-C\-U\-R\-L\-Wrapper} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_u_r_l_wrapper_a62ff4d4836e61952283c7ff8486a375e}
+
+
+\-Definicja w linii 12 pliku \-C\-U\-R\-L\-Wrapper.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_c_u_r_l_wrapper_a5618ea572dcba5a643b2f18986ba2619}{\index{\-C\-U\-R\-L\-Wrapper@{\-C\-U\-R\-L\-Wrapper}!curl\-Write\-Memory\-Callback@{curl\-Write\-Memory\-Callback}}
+\index{curl\-Write\-Memory\-Callback@{curl\-Write\-Memory\-Callback}!CURLWrapper@{\-C\-U\-R\-L\-Wrapper}}
+\subsubsection[{curl\-Write\-Memory\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-U\-R\-L\-Wrapper\-::curl\-Write\-Memory\-Callback} (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{contents, }
+\item[{size\-\_\-t}]{size, }
+\item[{size\-\_\-t}]{blocks, }
+\item[{void $\ast$}]{mem\-\_\-data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_c_u_r_l_wrapper_a5618ea572dcba5a643b2f18986ba2619}
+
+
+\-Definicja w linii 20 pliku \-C\-U\-R\-L\-Wrapper.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_u_r_l_wrapper_a5618ea572dcba5a643b2f18986ba2619_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_u_r_l_wrapper_ab30b15a7f68ca583e42a6db2f4e4f745}{\index{\-C\-U\-R\-L\-Wrapper@{\-C\-U\-R\-L\-Wrapper}!download\-Data@{download\-Data}}
+\index{download\-Data@{download\-Data}!CURLWrapper@{\-C\-U\-R\-L\-Wrapper}}
+\subsubsection[{download\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-U\-R\-L\-Wrapper\-::download\-Data} (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_u_r_l_wrapper_ab30b15a7f68ca583e42a6db2f4e4f745}
+
+
+\-Definicja w linii 28 pliku \-C\-U\-R\-L\-Wrapper.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_u_r_l_wrapper_ab30b15a7f68ca583e42a6db2f4e4f745_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_u_r_l_wrapper_ab30b15a7f68ca583e42a6db2f4e4f745_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_u_r_l_wrapper_af73bac595dd43910a0fc63206662f8bd}{\index{\-C\-U\-R\-L\-Wrapper@{\-C\-U\-R\-L\-Wrapper}!get\-Data\-Pointer@{get\-Data\-Pointer}}
+\index{get\-Data\-Pointer@{get\-Data\-Pointer}!CURLWrapper@{\-C\-U\-R\-L\-Wrapper}}
+\subsubsection[{get\-Data\-Pointer}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string $\ast$ {\bf \-C\-U\-R\-L\-Wrapper\-::get\-Data\-Pointer} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_u_r_l_wrapper_af73bac595dd43910a0fc63206662f8bd}
+
+
+\-Definicja w linii 48 pliku \-C\-U\-R\-L\-Wrapper.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_u_r_l_wrapper_af73bac595dd43910a0fc63206662f8bd_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_c_u_r_l_wrapper_ac67efd13ddfae37e5d7965c124a88120}{\index{\-C\-U\-R\-L\-Wrapper@{\-C\-U\-R\-L\-Wrapper}!data@{data}}
+\index{data@{data}!CURLWrapper@{\-C\-U\-R\-L\-Wrapper}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-C\-U\-R\-L\-Wrapper\-::data}\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_c_u_r_l_wrapper_ac67efd13ddfae37e5d7965c124a88120}
+
+
+\-Definicja w linii 25 pliku \-C\-U\-R\-L\-Wrapper.\-h.
+
+\hypertarget{class_c_u_r_l_wrapper_a6e4ca915cbdfcca109fec4f46da430a2}{\index{\-C\-U\-R\-L\-Wrapper@{\-C\-U\-R\-L\-Wrapper}!handle@{handle}}
+\index{handle@{handle}!CURLWrapper@{\-C\-U\-R\-L\-Wrapper}}
+\subsubsection[{handle}]{\setlength{\rightskip}{0pt plus 5cm}\-C\-U\-R\-L $\ast$ {\bf \-C\-U\-R\-L\-Wrapper\-::handle} = \-N\-U\-L\-L\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_c_u_r_l_wrapper_a6e4ca915cbdfcca109fec4f46da430a2}
+
+
+\-Definicja w linii 24 pliku \-C\-U\-R\-L\-Wrapper.\-h.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_c_u_r_l_wrapper_8h}{\-C\-U\-R\-L\-Wrapper.\-h}\item 
+\hyperlink{_c_u_r_l_wrapper_8cpp}{\-C\-U\-R\-L\-Wrapper.\-cpp}\end{DoxyCompactItemize}

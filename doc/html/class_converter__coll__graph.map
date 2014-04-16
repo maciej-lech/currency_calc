@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_f_x_rate.html" title="Nadrzędna klasa algorytmu pobierania kursów." alt="" coords="5,485,144,640"/>
+<area shape="rect" id="node4" href="$class_output_builder.html" title="Nadrzędny budowniczy interpretacji formatowania danych wyjściowych." alt="" coords="168,494,301,631"/>
+<area shape="rect" id="node6" href="$class_output_data.html" title="Klasa przechowująca dane wyjściowe." alt="" coords="187,230,304,333"/>
+<area shape="rect" id="node8" href="$class_data.html" title="Klasa modelująca kontener vector." alt="" coords="272,6,349,178"/>
+<area shape="rect" id="node10" href="$class_input_data.html" title="Nadrzędna klasa danych wejściowych." alt="" coords="292,358,401,461"/>
+</map>

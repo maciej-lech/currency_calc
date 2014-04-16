@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_u_r_l_wrapper.html#ab30b15a7f68ca583e42a6db2f4e4f745" title="Pobiera dane przez protokół http." alt="" coords="215,5,423,35"/>
+<area shape="rect" id="node7" href="$class_f_x_rate_n_b_p.html#a882f90197f0306fdf3e911eb925d7474" title="Generuje nazwę pliku .xml, dla podanej daty." alt="" coords="216,59,421,88"/>
+<area shape="rect" id="node9" href="$class_c_u_r_l_wrapper.html#af73bac595dd43910a0fc63206662f8bd" title="Zwraca wskaźnik na pobrane dane." alt="" coords="215,112,423,141"/>
+<area shape="rect" id="node11" href="$class_f_x_rate_n_b_p.html#a4c69d9e03b697a2098d7031f54e883dc" title="Wyszukuje odpowiedni kurs w pliku .xml z nbp.pl." alt="" coords="240,165,397,195"/>
+<area shape="rect" id="node13" href="$class_f_x_rate.html#ac28fb2050f6fd85272dddea359efe196" title="Ustawia kurs." alt="" coords="232,219,405,248"/>
+<area shape="rect" id="node5" href="$class_c_u_r_l_wrapper.html#a5618ea572dcba5a643b2f18986ba2619" title="Funkcja callback do zapisu przez bibliotekę curl." alt="" coords="472,5,747,35"/>
+</map>

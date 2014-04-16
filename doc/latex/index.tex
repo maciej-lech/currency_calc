@@ -1,0 +1,63 @@
+\begin{DoxyAuthor}{\-Autor}
+-\/ \-Maciej \-Lech $<$\href{mailto:lechmac@gmail.com}{\tt lechmac@gmail.\-com}$>$\par
+-\/ \-Karol \-Sowa $<$\href{mailto:karol.sowa@gmail.com}{\tt karol.\-sowa@gmail.\-com}$>$ 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Data}
+\-Styczeń 2014 
+\end{DoxyDate}
+\begin{DoxyVersion}{\-Wersja}
+1.\-0
+\end{DoxyVersion}
+\-Program ten powstał jako projekt na laboratorium z {\bfseries \-Obiektowych \-Metod \-Projektowania \-Systemów} na kierunku \-Elektronika i \-Telekomunikacja \-A\-G\-H w \-Krakowie.\par
+\par
+ \-Program przelicza waluty według kursu pobranego ze strony \href{http://www.nbp.pl}{\tt \-Narodowego \-Banku \-Polskiego}.\par
+ \-Pobiera on kwoty do przeliczenia ze standardowego wejścia lub z pliku i zapisuje przeliczone wartości na standardowym wyjściu lub w podanym pliku. \-Dane wyjściowe mogą być różnie formatowane, jako zestawienie tabelaryczne lub lista, z różnymi separatorami do wyboru.\hypertarget{index_etykieta-konstrukcja}{}\section{\-Konstrukcja i wykorzystane wzorce projektowe}\label{index_etykieta-konstrukcja}
+\-W dużym uproszczeniu konstrukcję programu można sprowadzić do poniższego schematu\-: 
+\begin{DoxyItemize}
+\item \-Jak widać, główne trzy etapy zostały zrealizowane za pomocą różnych wzorców projektowych. \-Wspólnym elementem tych etapów jest klasa \hyperlink{class_converter}{\-Converter}, która pełni rolę fabryki we wzorcu {\bfseries factory method} pobierającej dane wejściowe, dyrektora we wzorcu {\bfseries builder} nadzorującego generowanie danych wyjściowych, jak i klasy wybierającej metodę pozyskiwania kursów walutowych opartą na wzorcu {\bfseries strategy}.\par
+
+\item \-Dodatkowo w trakcie tworzenia skorzystano z wzorca {\bfseries singleton} w klasie głównej aplikacji \hyperlink{class_application}{\-Application}, w klasie \hyperlink{class_converter}{\-Converter} oraz w klasie obsługującej powiadomienia \hyperlink{class_log}{\-Log}.\par
+
+\item \-Do pobierania danych przez protokół http wykorzystano wzorzec projektowy {\bfseries adapter}, tworząc wrapper \-C++ biblioteki \-C libcurl.
+\end{DoxyItemize}\hypertarget{index_etykieta-korzystanie}{}\section{\-Kompilacja i uruchomienie}\label{index_etykieta-korzystanie}
+
+\begin{DoxyItemize}
+\item \-Program był tworzony i testowany z wykorzystaniem\-: \begin{DoxyVerb}
+	Ubuntu 12.04 LTS 64 bit
+	GCC 4.6.3
+	libstd++ 4.6.3
+	libcurl 7.22.0
+	Code::Blocks IDE 10.05
+	doxygen 1.7.6.1
+\end{DoxyVerb}
+
+\item \-Zrzut programu uruchomionego z opcją -\/h\-: \begin{DoxyVerb}
+Usage:
+	currency_calc -ic CURRENCY -oc CURRENCY [OPTIONS]
+
+Options:
+	-ic X  --in_curr X	Type of input currency
+	-oc X  --out_curr X	Type of output currency
+
+	-e X  --ex_rate X	Exchange rate source (nbp_http*)
+	-d X  --date X		Exchange rate date (last*, %RRMMDD%)
+
+	-i X  --in X		Set location of input data (stdin*, %FILE%)
+	-o X  --out X		Set location of output data (stdout*, %FILE%)
+	-t X  --type X		Type of output data (text_table_space_sep, text_table_tab_sep*, text_space_sep, text_tab_sep, text_newline_sep)
+
+	-h  --help		Show this help message
+	-a  --about		Show about
+	-v  --verbose		Verbose mode
+
+	*  Default option
+
+\end{DoxyVerb}
+
+\item \-Przykłady uruchomienia programu\-: \begin{DoxyVerb}
+	> currency_calc -v -ic pln -oc eur -i ./dane_do_przeliczenia.txt -o ./dane_przeliczone.txt
+	> currency_calc -v -ic eur -oc usd -t text_newline_sep
+	> currency_calc -v -ic jpy -oc krw -t text_space_sep -d 131024
+\end{DoxyVerb}
+ 
+\end{DoxyItemize}
